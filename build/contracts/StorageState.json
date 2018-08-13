@@ -1,0 +1,177 @@
+{
+  "contractName": "StorageState",
+  "abi": [],
+  "bytecode": "0x6080604052348015600f57600080fd5b50603580601d6000396000f3006080604052600080fd00a165627a7a7230582064af25e1d40d412e3b4e824a2c91e44b69aeea8ef94faa4e0ec81a5e9f1a93970029",
+  "deployedBytecode": "0x6080604052600080fd00a165627a7a7230582064af25e1d40d412e3b4e824a2c91e44b69aeea8ef94faa4e0ec81a5e9f1a93970029",
+  "sourceMap": "57:54:10:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;57:54:10;;;;;;;",
+  "deployedSourceMap": "57:54:10:-;;;;;",
+  "source": "pragma solidity ^0.4.24;\nimport \"./EternalStorage.sol\";\n\ncontract StorageState {\n    EternalStorage _storage;\n}",
+  "sourcePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
+  "ast": {
+    "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
+    "exportedSymbols": {
+      "StorageState": [
+        1376
+      ]
+    },
+    "id": 1377,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1372,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:10"
+      },
+      {
+        "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/EternalStorage.sol",
+        "file": "./EternalStorage.sol",
+        "id": 1373,
+        "nodeType": "ImportDirective",
+        "scope": 1377,
+        "sourceUnit": 888,
+        "src": "25:30:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1376,
+        "linearizedBaseContracts": [
+          1376
+        ],
+        "name": "StorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1375,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 1376,
+            "src": "85:23:10",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_EternalStorage_$887",
+              "typeString": "contract EternalStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 1374,
+              "name": "EternalStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 887,
+              "src": "85:14:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EternalStorage_$887",
+                "typeString": "contract EternalStorage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1377,
+        "src": "57:54:10"
+      }
+    ],
+    "src": "0:111:10"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
+    "exportedSymbols": {
+      "StorageState": [
+        1376
+      ]
+    },
+    "id": 1377,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1372,
+        "literals": [
+          "solidity",
+          "^",
+          "0.4",
+          ".24"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:24:10"
+      },
+      {
+        "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/EternalStorage.sol",
+        "file": "./EternalStorage.sol",
+        "id": 1373,
+        "nodeType": "ImportDirective",
+        "scope": 1377,
+        "sourceUnit": 888,
+        "src": "25:30:10",
+        "symbolAliases": [],
+        "unitAlias": ""
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 1376,
+        "linearizedBaseContracts": [
+          1376
+        ],
+        "name": "StorageState",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 1375,
+            "name": "_storage",
+            "nodeType": "VariableDeclaration",
+            "scope": 1376,
+            "src": "85:23:10",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_contract$_EternalStorage_$887",
+              "typeString": "contract EternalStorage"
+            },
+            "typeName": {
+              "contractScope": null,
+              "id": 1374,
+              "name": "EternalStorage",
+              "nodeType": "UserDefinedTypeName",
+              "referencedDeclaration": 887,
+              "src": "85:14:10",
+              "typeDescriptions": {
+                "typeIdentifier": "t_contract$_EternalStorage_$887",
+                "typeString": "contract EternalStorage"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          }
+        ],
+        "scope": 1377,
+        "src": "57:54:10"
+      }
+    ],
+    "src": "0:111:10"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.24+commit.e67f0147.Emscripten.clang"
+  },
+  "networks": {},
+  "schemaVersion": "2.0.1",
+  "updatedAt": "2018-08-13T13:54:40.427Z"
+}

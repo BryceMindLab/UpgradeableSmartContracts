@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
-import SimpleStorageContract from '../build/contracts/SimpleStorage.json'
 import getWeb3 from './utils/getWeb3'
+
+import PropertyStorageProxy from '../build/contracts/PropertyStorageProxy.json'
+import PropertyManagementV1 from '../build/contracts/PropertyManagementV1.json'
+import PropertyConnectorV1 from '../build/contracts/PropertyConnectorV1.json'
+
+import _ from 'underscore'
 
 import './css/oswald.css'
 import './css/open-sans.css'
@@ -12,7 +17,7 @@ class App extends Component {
     super(props)
 
     this.state = {
-      storageValue: 0,
+      controllerAddress: "",
       web3: null
     }
   }
@@ -43,26 +48,32 @@ class App extends Component {
      * state management library, but for convenience I've placed them here.
      */
 
+    // Create a truffle contract abstraction with the contract artifacts
     const contract = require('truffle-contract')
-    const simpleStorage = contract(SimpleStorageContract)
-    simpleStorage.setProvider(this.state.web3.currentProvider)
+    const propertyStorageProxy = contract(PropertyStorageProxy)
+    const propertyManagementV1 = contract(PropertyManagementV1)
+    const propertyConnectorV1 = contract(PropertyConnectorV1)
 
-    // Declaring this for later so we can chain functions on SimpleStorage.
-    var simpleStorageInstance
+    // Set the web3 provider for each of the contracts
+    propertyStorageProxy.setProvider(this.state.web3.currentProvider)
+    propertyManagementV1.setProvider(this.state.web3.currentProvider)
+    propertyConnectorV1.setProvider(this.state.web3.currentProvider)
+
+    // Deployed instance vars so we can chain functions later.
+    let proxyInstance, connectorInstance
 
     // Get accounts.
     this.state.web3.eth.getAccounts((error, accounts) => {
-      simpleStorage.deployed().then((instance) => {
-        simpleStorageInstance = instance
-
-        // Stores a given value, 5 by default.
-        return simpleStorageInstance.set(5, {from: accounts[0]})
+      propertyStorageProxy.deployed().then((instance) => {
+        console.log(`Proxy Instance: ${instance}`)
+        // This is where the magic happens. 
+        // Here we use 'underscores' extend method to leech the proxy onto 
+        // the delegate 'propertyManagementV1' 
+        proxyInstance = _.extend(instance, propertyManagementV1.at(instance.address))
+        // Test that the proxy controller address returns successfully 
+        return proxyInstance.getProxyControllerAddress.call()
       }).then((result) => {
-        // Get the value from the contract to prove it worked.
-        return simpleStorageInstance.get.call(accounts[0])
-      }).then((result) => {
-        // Update state with the result.
-        return this.setState({ storageValue: result.c[0] })
+        this.setState({controllerAddress: result})
       })
     })
   }
@@ -80,9 +91,7 @@ class App extends Component {
               <h1>Good to Go!</h1>
               <p>Your Truffle Box is installed and ready.</p>
               <h2>Smart Contract Example</h2>
-              <p>If your contracts compiled and migrated successfully, below will show a stored value of 5 (by default).</p>
-              <p>Try changing the value stored on <strong>line 59</strong> of App.js.</p>
-              <p>The stored value is: {this.state.storageValue}</p>
+              <p>The controller address is: {this.state.controllerAddress}</p>
             </div>
           </div>
         </main>
