@@ -17,9 +17,15 @@ class App extends Component {
     super(props)
 
     this.state = {
-      controllerAddress: "",
-      web3: null
+      proxyInstance: null,
+      propertyConnectorInstance: null,
+      properties: [],
+      controllerAddress: null,
+      web3: null,
+      intervalId: null
     }
+
+    this.syncState = this.syncState.bind(this)
   }
 
   componentWillMount() {
@@ -28,19 +34,39 @@ class App extends Component {
 
     getWeb3
     .then(results => {
+      let web3 = results.web3
+      web3.eth.deafaultAccount = web3.eth.accounts[0]
       this.setState({
         web3: results.web3
       })
+  
 
       // Instantiate contract once web3 provided.
-      this.instantiateContract()
+      return this.instantiateContract()
     })
     .catch(() => {
       console.log('Error finding web3.')
     })
+    
+    // Incase the database has already been hydrated we will sync first
+    // await this.hydrateProperites();
+    // await this.syncState();
+
   }
 
-  instantiateContract() {
+  componentDidMount() {
+    this.syncState();
+    var intervalId = setInterval(this.syncState, 1000*10);
+    // store intervalId in the state so it can be accessed later:
+    this.setState({intervalId: intervalId});
+  }
+  
+  componentWillUnmount() {
+    // use intervalId from the state to clear the interval
+    clearInterval(this.state.intervalId);
+  }
+
+  async instantiateContract() {
     /*
      * SMART CONTRACT EXAMPLE
      *
@@ -60,25 +86,70 @@ class App extends Component {
     propertyConnectorV1.setProvider(this.state.web3.currentProvider)
 
     // Deployed instance vars so we can chain functions later.
-    let proxyInstance, connectorInstance
+    let proxyInstance
 
     // Get accounts.
     this.state.web3.eth.getAccounts((error, accounts) => {
-      propertyStorageProxy.deployed().then((instance) => {
+      propertyStorageProxy.deployed()
+      .then((instance) => {
         console.log(`Proxy Instance: ${instance}`)
         // This is where the magic happens. 
         // Here we use 'underscores' extend method to leech the proxy onto 
         // the delegate 'propertyManagementV1' 
         proxyInstance = _.extend(instance, propertyManagementV1.at(instance.address))
-        // Test that the proxy controller address returns successfully 
-        return proxyInstance.getProxyControllerAddress.call()
-      }).then((result) => {
-        this.setState({controllerAddress: result})
+        this.setState({proxyInstance: proxyInstance})
+        // Setup the connector contract instance in state 
+        return propertyConnectorV1.deployed()
+      }).then((instance) => {
+        console.log(`Connector Instance: ${instance}`)
+        this.setState({propertyConnectorInstance: instance})
+        return this.syncState()
       })
     })
   }
 
+  // async hydrateProperites() {
+  //   const { propertyConnectorInstance } = this.state
+  //   if(propertyConnectorInstance) {
+  //     for(let property of propertyList) {
+  //       console.log(`Hydrating Database with property: ${property}`)
+  //       await propertyConnectorInstance.createDefaultProperty(property)
+  //     }
+  //   } else {
+  //     console.log("HydrateProperties: Missing contract instances!")
+  //   }
+  // }
+
+  async syncState() {
+    const { proxyInstance, propertyConnectorInstance } = this.state
+    if(proxyInstance && propertyConnectorInstance) {
+      const totalProperties = await proxyInstance.getTotalPropertyCount.call();
+      if(totalProperties > 0) {
+        this.setState({properties: []});
+        // Properties are zero indexed so we can tell if they have been init'ed first
+        for(var p=1; p<=totalProperties; p++) {
+          const name = await proxyInstance.getPropertyNameAtID(p)
+          const cost = await proxyInstance.getPropertyWeiCost(name)
+          const property = {
+            name,
+            cost
+          }
+          this.setState({
+            properties: [...this.state.properties, property]
+          })
+        }
+      }
+    } else {
+      console.log("SyncState: Missing contract instances!")
+    }
+  }
+
   render() {
+    const { properties } = this.state
+    const propertyView = properties.map((property, index) => (
+      <li key={index}>{`Property Name: ${property.name} Cost: ${property.cost}`}</li>
+    ))
+
     return (
       <div className="App">
         <nav className="navbar pure-menu pure-menu-horizontal">
@@ -91,7 +162,9 @@ class App extends Component {
               <h1>Good to Go!</h1>
               <p>Your Truffle Box is installed and ready.</p>
               <h2>Smart Contract Example</h2>
-              <p>The controller address is: {this.state.controllerAddress}</p>
+              <ul>
+                {propertyView}
+              </ul>
             </div>
           </div>
         </main>

@@ -20,14 +20,12 @@ contract PropertyManagementV1 is Controllable {
     function createProperty(string _propertyName, uint _cost)
         public
         onlyController // NOTE: apparently I'm supposed to 'fix the COO logic?'
+        returns (bool)
     {
       // Check to see if there is a value initialized on the shield, if so 
       //  then this Property has already been created.
-        uint propertyId = getPropertyId(_propertyName);
-        require(
-            propertyId == 0, 
-            "Cannot create a new Property with this name. There appears to already be a property with that name."
-        );
+        if(propertyExists(_propertyName)) return false;
+
         // Initialize the property data to default values 
         _setPropertyWeiCost(_propertyName, _cost); 
         _setPropertyOwnerAddress(_propertyName, msg.sender);
@@ -36,10 +34,10 @@ contract PropertyManagementV1 is Controllable {
 
         // FIXME: Need to reimplement this method (Possibly in a nother countract))
         // _increaseFactionPower(id);
+        return true;
     }
 
-    // NOTE: We are one indexing the propertys to more easily see
-    //  if they exist or not. 
+    // NOTE: We are '1' indexing properties to tell if they have been init'ed or not
     function _addPropertyAndID(string _propertyName) private {
         uint propertyId = getTotalPropertyCount() + 1;
         // Update the total propertys count 
@@ -57,6 +55,10 @@ contract PropertyManagementV1 is Controllable {
             _propertyName.getPropertyIDFromNameKey(), 
             propertyId
         );  
+    }
+
+    function propertyExists(string _propertyName) public view returns (bool) {
+        return (getPropertyId(_propertyName) > 0);
     }
 
     function getPropertyNameAtID(uint _tokenId) public view returns (string) {

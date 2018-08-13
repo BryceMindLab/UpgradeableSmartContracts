@@ -1,4 +1,5 @@
 /* global describe it artifacts, contract, assert */
+const _ = require('underscore');
 
 /*
 What makes Truffle tests different from that of Mocha is the contract() 
@@ -28,31 +29,8 @@ const PropertyControllerProxy = artifacts.require("PropertyControllerProxy")
 contract('Proxy contract test', async (accounts) => {
 
   it("should allow us to set and retireve the proxyControllerAdress", async () => {
-    // let propertyStorageProxy
-    // let propertyManagementV1
-    // let propertyControllerProxy
-
-    // PropertyStorageProxy.deployed()
-    // .then((instance) => {
-    //   propertyStorageProxy = instance
-    //   return PropertyManagementV1.deployed()
-    // }).then((instance) => {
-    //   propertyManagementV1 = instance
-    //   return _.extend(propertyStorageProxy, propertyManagementV1.at(propertyStorageProxy.address))
-    // }).then((instance) => {
-    //   propertyStorageProxy = instance
-    //   return PropertyControllerProxy.deployed();
-    // }).then((instance) => {
-    //   propertyControllerProxy = instance
-    //   return propertyStorageProxy.setProxyControllerAddress(propertyControllerProxy.address)
-    // }).then(() => {
-    //   return propertyStorageProxy.getProxyControllerAddress()
-    // }).then((controllerAddress) => {
-    //   console.log(`Contoller Address: ${controllerAddress}`)
-    //   asset.equal(propertyControllerProxy.address, 0x00, "These addresses do not match")
-    // })
-
     // Connect the proxy to leech off the PropertyConnectorV1
+    // TODO: Change all `deployed()` to `new()`
     let propertyStorageProxy = await PropertyStorageProxy.deployed()
     propertyStorageProxy = _.extend(propertyStorageProxy, PropertyManagementV1.at(propertyStorageProxy.address))
     
@@ -72,45 +50,4 @@ contract('Proxy contract test', async (accounts) => {
     // console.log(`Returned Cost: ${cost}`);
     // assert.equal("Bryce", name, "These addresses do not match")
   })
-
-
-  // it("should call a function that depends on a linked library", async () => {
-  //   let meta = await MetaCoin.deployed();
-  //   let outCoinBalance = await meta.getBalance.call(accounts[0]);
-  //   let metaCoinBalance = outCoinBalance.toNumber();
-  //   let outCoinBalanceEth = await meta.getBalanceInEth.call(accounts[0]);
-  //   let metaCoinEthBalance = outCoinBalanceEth.toNumber();
-  //   assert.equal(metaCoinEthBalance, 2 * metaCoinBalance);
-
-  // });
-
-  // it("should send coin correctly", async () => {
-
-  //   // Get initial balances of first and second account.
-  //   let account_one = accounts[0];
-  //   let account_two = accounts[1];
-
-  //   let amount = 10;
-
-
-  //   let instance = await MetaCoin.deployed();
-  //   let meta = instance;
-
-  //   let balance = await meta.getBalance.call(account_one);
-  //   let account_one_starting_balance = balance.toNumber();
-
-  //   balance = await meta.getBalance.call(account_two);
-  //   let account_two_starting_balance = balance.toNumber();
-  //   await meta.sendCoin(account_two, amount, {from: account_one});
-
-  //   balance = await meta.getBalance.call(account_one);
-  //   let account_one_ending_balance = balance.toNumber();
-
-  //   balance = await meta.getBalance.call(account_two);
-  //   let account_two_ending_balance = balance.toNumber();
-
-  //   assert.equal(account_one_ending_balance, account_one_starting_balance - amount, "Amount wasn't correctly taken from the sender");
-  //   assert.equal(account_two_ending_balance, account_two_starting_balance + amount, "Amount wasn't correctly sent to the receiver");
-  // });
-
 })

@@ -18,22 +18,22 @@
   ],
   "bytecode": "0x610158610030600b82828239805160001a6073146000811461002057610022565bfe5b5030600052607381538281f3007300000000000000000000000000000000000000003014608060405260043610610058576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637ef3878d1461005d575b600080fd5b610065610083565b60405180826000191660001916815260200191505060405180910390f35b600060405160200180807f50524f58595f434f4e54524f4c4c45520000000000000000000000000000000081525060100190506040516020818303038152906040526040518082805190602001908083835b6020831015156100fa57805182526020820191506020810190506020830392506100d5565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390209050905600a165627a7a7230582068132d041a24a7b46d6da1c845fcb039ecbf3d8627c4db7994c59e4abdc890e20029",
   "deployedBytecode": "0x7300000000000000000000000000000000000000003014608060405260043610610058576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680637ef3878d1461005d575b600080fd5b610065610083565b60405180826000191660001916815260200191505060405180910390f35b600060405160200180807f50524f58595f434f4e54524f4c4c45520000000000000000000000000000000081525060100190506040516020818303038152906040526040518082805190602001908083835b6020831015156100fa57805182526020820191506020810190506020830392506100d5565b6001836020036101000a03801982511681845116808217855250505050505090500191505060405180910390209050905600a165627a7a7230582068132d041a24a7b46d6da1c845fcb039ecbf3d8627c4db7994c59e4abdc890e20029",
-  "sourceMap": "137:215:11:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
-  "deployedSourceMap": "137:215:11:-;;;;;;;;;;;;;;;;;;;;;;;;;;;216:134;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;270:7;306:36;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;306:36:11;;;296:47;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;296:47:11;;;;;;;;;;;;;;;;289:54;;216:134;:::o",
+  "sourceMap": "137:215:4:-;;132:2:-1;166:7;155:9;146:7;137:37;252:7;246:14;243:1;238:23;232:4;229:33;270:1;265:20;;;;222:63;;265:20;274:9;222:63;;298:9;295:1;288:20;328:4;319:7;311:22;352:7;343;336:24",
+  "deployedSourceMap": "137:215:4:-;;;;;;;;;;;;;;;;;;;;;;;;;;;216:134;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;270:7;306:36;;;;;;;;;;;;;;;;49:4:-1;39:7;30;26:21;22:32;13:7;6:49;306:36:4;;;296:47;;;;;;;;;;;;;36:153:-1;66:2;61:3;58:11;51:19;36:153;;;182:3;176:10;171:3;164:23;98:2;93:3;89:12;82:19;;123:2;118:3;114:12;107:19;;148:2;143:3;139:12;132:19;;36:153;;;274:1;267:3;263:2;259:12;254:3;250:22;246:30;315:4;311:9;305:3;299:10;295:26;356:4;350:3;344:10;340:21;389:7;380;377:20;372:3;365:33;3:399;;;296:47:4;;;;;;;;;;;;;;;;289:54;;216:134;:::o",
   "source": "pragma solidity ^0.4.18;\n\n/**\n * @title ProxyControllerKeyLib\n * @dev Computes Keys to create and lookup values in Enternal Storage \n */\nlibrary ProxyControllerKeyLib {\n    /* \n\n    Proxy Controller Key\n\n    */\n\n    function getProxyControllerKey() public pure returns (bytes32) {\n        return keccak256(abi.encodePacked(\"PROXY_CONTROLLER\"));\n    }\n}",
   "sourcePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
   "ast": {
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
     "exportedSymbols": {
       "ProxyControllerKeyLib": [
-        1392
+        687
       ]
     },
-    "id": 1393,
+    "id": 688,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1378,
+        "id": 673,
         "literals": [
           "solidity",
           "^",
@@ -41,7 +41,7 @@
           ".18"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:11"
+        "src": "0:24:4"
       },
       {
         "baseContracts": [],
@@ -49,18 +49,18 @@
         "contractKind": "library",
         "documentation": "@title ProxyControllerKeyLib\n@dev Computes Keys to create and lookup values in Enternal Storage ",
         "fullyImplemented": true,
-        "id": 1392,
+        "id": 687,
         "linearizedBaseContracts": [
-          1392
+          687
         ],
         "name": "ProxyControllerKeyLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1390,
+              "id": 685,
               "nodeType": "Block",
-              "src": "279:71:11",
+              "src": "279:71:4",
               "statements": [
                 {
                   "expression": {
@@ -72,14 +72,14 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "50524f58595f434f4e54524f4c4c4552",
-                            "id": 1386,
+                            "id": 681,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "323:18:11",
+                            "src": "323:18:4",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_ebfa72cccbfc0a76559de3dc916f68597b4334b0361d231238421d9adfdd520e",
@@ -97,18 +97,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1384,
+                            "id": 679,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1642,
-                            "src": "306:3:11",
+                            "referencedDeclaration": 937,
+                            "src": "306:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
                               "typeString": "abi"
                             }
                           },
-                          "id": 1385,
+                          "id": 680,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -116,13 +116,13 @@
                           "memberName": "encodePacked",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "306:16:11",
+                          "src": "306:16:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 1387,
+                        "id": 682,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -130,7 +130,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "306:36:11",
+                        "src": "306:36:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
                           "typeString": "bytes memory"
@@ -144,18 +144,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 1383,
+                      "id": 678,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1649,
-                      "src": "296:9:11",
+                      "referencedDeclaration": 944,
+                      "src": "296:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 1388,
+                    "id": 683,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -163,21 +163,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "296:47:11",
+                    "src": "296:47:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 1382,
-                  "id": 1389,
+                  "functionReturnParameters": 677,
+                  "id": 684,
                   "nodeType": "Return",
-                  "src": "289:54:11"
+                  "src": "289:54:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1391,
+            "id": 686,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -185,23 +185,23 @@
             "name": "getProxyControllerKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1379,
+              "id": 674,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "246:2:11"
+              "src": "246:2:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1382,
+              "id": 677,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1381,
+                  "id": 676,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1391,
-                  "src": "270:7:11",
+                  "scope": 686,
+                  "src": "270:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -209,10 +209,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1380,
+                    "id": 675,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "270:7:11",
+                    "src": "270:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -222,33 +222,33 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "269:9:11"
+              "src": "269:9:4"
             },
-            "scope": 1392,
-            "src": "216:134:11",
+            "scope": 687,
+            "src": "216:134:4",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1393,
-        "src": "137:215:11"
+        "scope": 688,
+        "src": "137:215:4"
       }
     ],
-    "src": "0:352:11"
+    "src": "0:352:4"
   },
   "legacyAST": {
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
     "exportedSymbols": {
       "ProxyControllerKeyLib": [
-        1392
+        687
       ]
     },
-    "id": 1393,
+    "id": 688,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 1378,
+        "id": 673,
         "literals": [
           "solidity",
           "^",
@@ -256,7 +256,7 @@
           ".18"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:11"
+        "src": "0:24:4"
       },
       {
         "baseContracts": [],
@@ -264,18 +264,18 @@
         "contractKind": "library",
         "documentation": "@title ProxyControllerKeyLib\n@dev Computes Keys to create and lookup values in Enternal Storage ",
         "fullyImplemented": true,
-        "id": 1392,
+        "id": 687,
         "linearizedBaseContracts": [
-          1392
+          687
         ],
         "name": "ProxyControllerKeyLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 1390,
+              "id": 685,
               "nodeType": "Block",
-              "src": "279:71:11",
+              "src": "279:71:4",
               "statements": [
                 {
                   "expression": {
@@ -287,14 +287,14 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "50524f58595f434f4e54524f4c4c4552",
-                            "id": 1386,
+                            "id": 681,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "kind": "string",
                             "lValueRequested": false,
                             "nodeType": "Literal",
-                            "src": "323:18:11",
+                            "src": "323:18:4",
                             "subdenomination": null,
                             "typeDescriptions": {
                               "typeIdentifier": "t_stringliteral_ebfa72cccbfc0a76559de3dc916f68597b4334b0361d231238421d9adfdd520e",
@@ -312,18 +312,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 1384,
+                            "id": 679,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1642,
-                            "src": "306:3:11",
+                            "referencedDeclaration": 937,
+                            "src": "306:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
                               "typeString": "abi"
                             }
                           },
-                          "id": 1385,
+                          "id": 680,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -331,13 +331,13 @@
                           "memberName": "encodePacked",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "306:16:11",
+                          "src": "306:16:4",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_abiencodepacked_pure$__$returns$_t_bytes_memory_ptr_$",
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 1387,
+                        "id": 682,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -345,7 +345,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "306:36:11",
+                        "src": "306:36:4",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes_memory_ptr",
                           "typeString": "bytes memory"
@@ -359,18 +359,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 1383,
+                      "id": 678,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 1649,
-                      "src": "296:9:11",
+                      "referencedDeclaration": 944,
+                      "src": "296:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 1388,
+                    "id": 683,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -378,21 +378,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "296:47:11",
+                    "src": "296:47:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 1382,
-                  "id": 1389,
+                  "functionReturnParameters": 677,
+                  "id": 684,
                   "nodeType": "Return",
-                  "src": "289:54:11"
+                  "src": "289:54:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 1391,
+            "id": 686,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -400,23 +400,23 @@
             "name": "getProxyControllerKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 1379,
+              "id": 674,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "246:2:11"
+              "src": "246:2:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 1382,
+              "id": 677,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 1381,
+                  "id": 676,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 1391,
-                  "src": "270:7:11",
+                  "scope": 686,
+                  "src": "270:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -424,10 +424,10 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 1380,
+                    "id": 675,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
-                    "src": "270:7:11",
+                    "src": "270:7:4",
                     "typeDescriptions": {
                       "typeIdentifier": "t_bytes32",
                       "typeString": "bytes32"
@@ -437,20 +437,20 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "269:9:11"
+              "src": "269:9:4"
             },
-            "scope": 1392,
-            "src": "216:134:11",
+            "scope": 687,
+            "src": "216:134:4",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 1393,
-        "src": "137:215:11"
+        "scope": 688,
+        "src": "137:215:4"
       }
     ],
-    "src": "0:352:11"
+    "src": "0:352:4"
   },
   "compiler": {
     "name": "solc",
@@ -460,10 +460,10 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0x2e335f247e91caa168c64b63104c4475b2af3942",
-      "transactionHash": "0x50b0e8784fbf4c2831bd2ebca63e47ab7915e4d99fa102a5f7dfd42a68cd4b03"
+      "address": "0x36a8054476cef7d35251fae816f87e09a49e7e43",
+      "transactionHash": "0x9da429820a2f010355b6845dd7207eee7ed07b12cc772fd00734123efa126f9b"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T14:04:21.715Z"
+  "updatedAt": "2018-08-13T23:07:51.463Z"
 }

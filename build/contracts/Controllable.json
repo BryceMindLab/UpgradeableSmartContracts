@@ -32,22 +32,22 @@
   ],
   "bytecode": "0x608060405234801561001057600080fd5b506104d7806100206000396000f30060806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630dc8bde1146100515780638bb0985214610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a9610337565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156101b6576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602d8152602001807f43616e6e6f7420736574207468652050726f787920436f6e74726f6c6c65722081526020017f746f20616464726573732830290000000000000000000000000000000000000081525060400191505060405180910390fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663ca446dd973__ProxyControllerKeyLib_________________637ef3878d6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561025357600080fd5b505af4158015610267573d6000803e3d6000fd5b505050506040513d602081101561027d57600080fd5b8101908080519060200190929190505050836040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083600019166000191681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200192505050600060405180830381600087803b15801561031c57600080fd5b505af1158015610330573d6000803e3d6000fd5b5050505050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166321f8a72173__ProxyControllerKeyLib_________________637ef3878d6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156103d657600080fd5b505af41580156103ea573d6000803e3d6000fd5b505050506040513d602081101561040057600080fd5b81019080805190602001909291905050506040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050602060405180830381600087803b15801561046b57600080fd5b505af115801561047f573d6000803e3d6000fd5b505050506040513d602081101561049557600080fd5b81019080805190602001909291905050509050905600a165627a7a723058206d085669373a1cd57338c915d8b1bcb6dc9cbccf6786d62352062ec7b312b4db0029",
   "deployedBytecode": "0x60806040526004361061004c576000357c0100000000000000000000000000000000000000000000000000000000900463ffffffff1680630dc8bde1146100515780638bb0985214610094575b600080fd5b34801561005d57600080fd5b50610092600480360381019080803573ffffffffffffffffffffffffffffffffffffffff1690602001909291905050506100eb565b005b3480156100a057600080fd5b506100a9610337565b604051808273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200191505060405180910390f35b600073ffffffffffffffffffffffffffffffffffffffff168173ffffffffffffffffffffffffffffffffffffffff16141515156101b6576040517f08c379a000000000000000000000000000000000000000000000000000000000815260040180806020018281038252602d8152602001807f43616e6e6f7420736574207468652050726f787920436f6e74726f6c6c65722081526020017f746f20616464726573732830290000000000000000000000000000000000000081525060400191505060405180910390fd5b6000809054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff1663ca446dd973__ProxyControllerKeyLib_________________637ef3878d6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b15801561025357600080fd5b505af4158015610267573d6000803e3d6000fd5b505050506040513d602081101561027d57600080fd5b8101908080519060200190929190505050836040518363ffffffff167c01000000000000000000000000000000000000000000000000000000000281526004018083600019166000191681526020018273ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff16815260200192505050600060405180830381600087803b15801561031c57600080fd5b505af1158015610330573d6000803e3d6000fd5b5050505050565b60008060009054906101000a900473ffffffffffffffffffffffffffffffffffffffff1673ffffffffffffffffffffffffffffffffffffffff166321f8a72173__ProxyControllerKeyLib_________________637ef3878d6040518163ffffffff167c010000000000000000000000000000000000000000000000000000000002815260040160206040518083038186803b1580156103d657600080fd5b505af41580156103ea573d6000803e3d6000fd5b505050506040513d602081101561040057600080fd5b81019080805190602001909291905050506040518263ffffffff167c0100000000000000000000000000000000000000000000000000000000028152600401808260001916600019168152602001915050602060405180830381600087803b15801561046b57600080fd5b505af115801561047f573d6000803e3d6000fd5b505050506040513d602081101561049557600080fd5b81019080805190602001909291905050509050905600a165627a7a723058206d085669373a1cd57338c915d8b1bcb6dc9cbccf6786d62352062ec7b312b4db0029",
-  "sourceMap": "100:842:5:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;100:842:5;;;;;;;",
-  "deployedSourceMap": "100:842:5:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;513:427;;8:9:-1;5:2;;;30:1;27;20:12;5:2;513:427:5;;;;;;;;;;;;;;;;;;;;;;;;;;;;350:157;;8:9:-1;5:2;;;30:1;27;20:12;5:2;350:157:5;;;;;;;;;;;;;;;;;;;;;;;;;;;513:427;731:1;703:30;;:16;:30;;;;682:122;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;814:8;;;;;;;;;;;:19;;;847:21;:43;:45;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;847:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;847:45:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;847:45:5;;;;;;;;;;;;;;;;907:16;814:119;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;814:119:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;814:119:5;;;;513:427;:::o;350:157::-;408:7;434:8;;;;;;;;;;;:19;;;454:21;:43;:45;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;454:45:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;454:45:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;454:45:5;;;;;;;;;;;;;;;;434:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;434:66:5;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;434:66:5;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;434:66:5;;;;;;;;;;;;;;;;427:73;;350:157;:::o",
+  "sourceMap": "100:842:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;100:842:0;;;;;;;",
+  "deployedSourceMap": "100:842:0:-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;513:427;;8:9:-1;5:2;;;30:1;27;20:12;5:2;513:427:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;350:157;;8:9:-1;5:2;;;30:1;27;20:12;5:2;350:157:0;;;;;;;;;;;;;;;;;;;;;;;;;;;513:427;731:1;703:30;;:16;:30;;;;682:122;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;814:8;;;;;;;;;;;:19;;;847:21;:43;:45;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;847:45:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;847:45:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;847:45:0;;;;;;;;;;;;;;;;907:16;814:119;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;814:119:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;814:119:0;;;;513:427;:::o;350:157::-;408:7;434:8;;;;;;;;;;;:19;;;454:21;:43;:45;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;454:45:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;454:45:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;454:45:0;;;;;;;;;;;;;;;;434:66;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;434:66:0;;;;8:9:-1;5:2;;;45:16;42:1;39;24:38;77:16;74:1;67:27;5:2;434:66:0;;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;434:66:0;;;;;;;;;;;;;;;;427:73;;350:157;:::o",
   "source": "pragma solidity ^0.4.24;\n\nimport \"../libs/ProxyControllerKeyLib.sol\";\nimport \"./StorageState.sol\";\n\ncontract Controllable is StorageState {\n    modifier onlyController() {\n        require(\n            msg.sender == getProxyControllerAddress(),\n            \"Only this contract's 'controller' can perform this action.\"\n        );\n        _;\n    }\n\n    function getProxyControllerAddress() public view returns (address) {\n        return _storage.getAddress(ProxyControllerKeyLib.getProxyControllerKey());\n    }\n\n    function setProxyControllerAddress(address _proxyController) \n        external \n        // FIXME: Anyone can change this right meow. Need to add modifier \n    {\n        require(\n            _proxyController != address(0),\n            \"Cannot set the Proxy Controller to address(0)\"\n        );\n        _storage.setAddress(\n            ProxyControllerKeyLib.getProxyControllerKey(), \n            _proxyController\n        );\n    }\n}",
   "sourcePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/Controllable.sol",
   "ast": {
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/Controllable.sol",
     "exportedSymbols": {
       "Controllable": [
-        612
+        56
       ]
     },
-    "id": 613,
+    "id": 57,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 557,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -55,27 +55,27 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:0"
       },
       {
         "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
         "file": "../libs/ProxyControllerKeyLib.sol",
-        "id": 558,
+        "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 613,
-        "sourceUnit": 1393,
-        "src": "26:43:5",
+        "scope": 57,
+        "sourceUnit": 688,
+        "src": "26:43:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
         "file": "./StorageState.sol",
-        "id": 559,
+        "id": 3,
         "nodeType": "ImportDirective",
-        "scope": 613,
-        "sourceUnit": 1377,
-        "src": "70:28:5",
+        "scope": 57,
+        "sourceUnit": 672,
+        "src": "70:28:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -85,40 +85,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 560,
+              "id": 4,
               "name": "StorageState",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1376,
-              "src": "125:12:5",
+              "referencedDeclaration": 671,
+              "src": "125:12:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageState_$1376",
+                "typeIdentifier": "t_contract$_StorageState_$671",
                 "typeString": "contract StorageState"
               }
             },
-            "id": 561,
+            "id": 5,
             "nodeType": "InheritanceSpecifier",
-            "src": "125:12:5"
+            "src": "125:12:0"
           }
         ],
         "contractDependencies": [
-          1376
+          671
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 612,
+        "id": 56,
         "linearizedBaseContracts": [
-          612,
-          1376
+          56,
+          671
         ],
         "name": "Controllable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 573,
+              "id": 17,
               "nodeType": "Block",
-              "src": "170:174:5",
+              "src": "170:174:0",
               "statements": [
                 {
                   "expression": {
@@ -130,7 +130,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 568,
+                        "id": 12,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -139,18 +139,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 564,
+                            "id": 8,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1655,
-                            "src": "201:3:5",
+                            "referencedDeclaration": 950,
+                            "src": "201:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 565,
+                          "id": 9,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -158,7 +158,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "201:10:5",
+                          "src": "201:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -171,18 +171,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 566,
+                            "id": 10,
                             "name": "getProxyControllerAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 587,
-                            "src": "215:25:5",
+                            "referencedDeclaration": 31,
+                            "src": "215:25:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                               "typeString": "function () view returns (address)"
                             }
                           },
-                          "id": 567,
+                          "id": 11,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -190,13 +190,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "215:27:5",
+                          "src": "215:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "201:41:5",
+                        "src": "201:41:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -205,14 +205,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4f6e6c79207468697320636f6e747261637427732027636f6e74726f6c6c6572272063616e20706572666f726d207468697320616374696f6e2e",
-                        "id": 569,
+                        "id": 13,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "256:60:5",
+                        "src": "256:60:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b11ddb228d007a926e57aa5b31d072a54e0ba82a40c7149d9bf82bae0e65d86f",
@@ -232,21 +232,21 @@
                           "typeString": "literal_string \"Only this contract's 'controller' can perform this action.\""
                         }
                       ],
-                      "id": 563,
+                      "id": 7,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1658,
-                        1659
+                        953,
+                        954
                       ],
-                      "referencedDeclaration": 1659,
-                      "src": "180:7:5",
+                      "referencedDeclaration": 954,
+                      "src": "180:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 570,
+                    "id": 14,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -254,41 +254,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "180:146:5",
+                    "src": "180:146:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 571,
+                  "id": 15,
                   "nodeType": "ExpressionStatement",
-                  "src": "180:146:5"
+                  "src": "180:146:0"
                 },
                 {
-                  "id": 572,
+                  "id": 16,
                   "nodeType": "PlaceholderStatement",
-                  "src": "336:1:5"
+                  "src": "336:1:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 574,
+            "id": 18,
             "name": "onlyController",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 562,
+              "id": 6,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "167:2:5"
+              "src": "167:2:0"
             },
-            "src": "144:200:5",
+            "src": "144:200:0",
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 586,
+              "id": 30,
               "nodeType": "Block",
-              "src": "417:90:5",
+              "src": "417:90:0",
               "statements": [
                 {
                   "expression": {
@@ -301,32 +301,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 581,
+                            "id": 25,
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1392,
-                            "src": "454:21:5",
+                            "referencedDeclaration": 687,
+                            "src": "454:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$1392_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
-                          "id": 582,
+                          "id": 26,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1391,
-                          "src": "454:43:5",
+                          "referencedDeclaration": 686,
+                          "src": "454:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
                             "typeString": "function () pure returns (bytes32)"
                           }
                         },
-                        "id": 583,
+                        "id": 27,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -334,7 +334,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "454:45:5",
+                        "src": "454:45:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -350,32 +350,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 579,
+                        "id": 23,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1375,
-                        "src": "434:8:5",
+                        "referencedDeclaration": 670,
+                        "src": "434:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EternalStorage_$887",
+                          "typeIdentifier": "t_contract$_EternalStorage_$331",
                           "typeString": "contract EternalStorage"
                         }
                       },
-                      "id": 580,
+                      "id": 24,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 653,
-                      "src": "434:19:5",
+                      "referencedDeclaration": 97,
+                      "src": "434:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_address_$",
                         "typeString": "function (bytes32) view external returns (address)"
                       }
                     },
-                    "id": 584,
+                    "id": 28,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -383,21 +383,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "434:66:5",
+                    "src": "434:66:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 578,
-                  "id": 585,
+                  "functionReturnParameters": 22,
+                  "id": 29,
                   "nodeType": "Return",
-                  "src": "427:73:5"
+                  "src": "427:73:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 587,
+            "id": 31,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -405,23 +405,23 @@
             "name": "getProxyControllerAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 575,
+              "id": 19,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "384:2:5"
+              "src": "384:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 578,
+              "id": 22,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 577,
+                  "id": 21,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 587,
-                  "src": "408:7:5",
+                  "scope": 31,
+                  "src": "408:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -429,10 +429,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 576,
+                    "id": 20,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "408:7:5",
+                    "src": "408:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -442,19 +442,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "407:9:5"
+              "src": "407:9:0"
             },
-            "scope": 612,
-            "src": "350:157:5",
+            "scope": 56,
+            "src": "350:157:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 610,
+              "id": 54,
               "nodeType": "Block",
-              "src": "672:268:5",
+              "src": "672:268:0",
               "statements": [
                 {
                   "expression": {
@@ -466,19 +466,19 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 597,
+                        "id": 41,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 593,
+                          "id": 37,
                           "name": "_proxyController",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 589,
-                          "src": "703:16:5",
+                          "referencedDeclaration": 33,
+                          "src": "703:16:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -492,14 +492,14 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 595,
+                              "id": 39,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "731:1:5",
+                              "src": "731:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -515,20 +515,20 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 594,
+                            "id": 38,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "723:7:5",
+                            "src": "723:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": "address"
                           },
-                          "id": 596,
+                          "id": 40,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -536,13 +536,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "723:10:5",
+                          "src": "723:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "703:30:5",
+                        "src": "703:30:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -551,14 +551,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "43616e6e6f7420736574207468652050726f787920436f6e74726f6c6c657220746f2061646472657373283029",
-                        "id": 598,
+                        "id": 42,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "747:47:5",
+                        "src": "747:47:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_e1ffcaf37da5ebf44f5649b8596b48f6849ff35bee5f6d9c613e938799ee7f0c",
@@ -578,21 +578,21 @@
                           "typeString": "literal_string \"Cannot set the Proxy Controller to address(0)\""
                         }
                       ],
-                      "id": 592,
+                      "id": 36,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1658,
-                        1659
+                        953,
+                        954
                       ],
-                      "referencedDeclaration": 1659,
-                      "src": "682:7:5",
+                      "referencedDeclaration": 954,
+                      "src": "682:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 599,
+                    "id": 43,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -600,15 +600,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "682:122:5",
+                    "src": "682:122:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 600,
+                  "id": 44,
                   "nodeType": "ExpressionStatement",
-                  "src": "682:122:5"
+                  "src": "682:122:0"
                 },
                 {
                   "expression": {
@@ -621,32 +621,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 604,
+                            "id": 48,
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1392,
-                            "src": "847:21:5",
+                            "referencedDeclaration": 687,
+                            "src": "847:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$1392_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
-                          "id": 605,
+                          "id": 49,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1391,
-                          "src": "847:43:5",
+                          "referencedDeclaration": 686,
+                          "src": "847:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
                             "typeString": "function () pure returns (bytes32)"
                           }
                         },
-                        "id": 606,
+                        "id": 50,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -654,7 +654,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "847:45:5",
+                        "src": "847:45:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -662,12 +662,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 607,
+                        "id": 51,
                         "name": "_proxyController",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 589,
-                        "src": "907:16:5",
+                        "referencedDeclaration": 33,
+                        "src": "907:16:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -687,32 +687,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 601,
+                        "id": 45,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1375,
-                        "src": "814:8:5",
+                        "referencedDeclaration": 670,
+                        "src": "814:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EternalStorage_$887",
+                          "typeIdentifier": "t_contract$_EternalStorage_$331",
                           "typeString": "contract EternalStorage"
                         }
                       },
-                      "id": 603,
+                      "id": 47,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "setAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 779,
-                      "src": "814:19:5",
+                      "referencedDeclaration": 223,
+                      "src": "814:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (bytes32,address) external"
                       }
                     },
-                    "id": 608,
+                    "id": 52,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -720,20 +720,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "814:119:5",
+                    "src": "814:119:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 609,
+                  "id": 53,
                   "nodeType": "ExpressionStatement",
-                  "src": "814:119:5"
+                  "src": "814:119:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 611,
+            "id": 55,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -741,16 +741,16 @@
             "name": "setProxyControllerAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 590,
+              "id": 34,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 589,
+                  "id": 33,
                   "name": "_proxyController",
                   "nodeType": "VariableDeclaration",
-                  "scope": 611,
-                  "src": "548:24:5",
+                  "scope": 55,
+                  "src": "548:24:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -758,10 +758,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 588,
+                    "id": 32,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "548:7:5",
+                    "src": "548:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -771,40 +771,40 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "547:26:5"
+              "src": "547:26:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 591,
+              "id": 35,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "672:0:5"
+              "src": "672:0:0"
             },
-            "scope": 612,
-            "src": "513:427:5",
+            "scope": 56,
+            "src": "513:427:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 613,
-        "src": "100:842:5"
+        "scope": 57,
+        "src": "100:842:0"
       }
     ],
-    "src": "0:942:5"
+    "src": "0:942:0"
   },
   "legacyAST": {
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/Controllable.sol",
     "exportedSymbols": {
       "Controllable": [
-        612
+        56
       ]
     },
-    "id": 613,
+    "id": 57,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 557,
+        "id": 1,
         "literals": [
           "solidity",
           "^",
@@ -812,27 +812,27 @@
           ".24"
         ],
         "nodeType": "PragmaDirective",
-        "src": "0:24:5"
+        "src": "0:24:0"
       },
       {
         "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
         "file": "../libs/ProxyControllerKeyLib.sol",
-        "id": 558,
+        "id": 2,
         "nodeType": "ImportDirective",
-        "scope": 613,
-        "sourceUnit": 1393,
-        "src": "26:43:5",
+        "scope": 57,
+        "sourceUnit": 688,
+        "src": "26:43:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
       {
         "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
         "file": "./StorageState.sol",
-        "id": 559,
+        "id": 3,
         "nodeType": "ImportDirective",
-        "scope": 613,
-        "sourceUnit": 1377,
-        "src": "70:28:5",
+        "scope": 57,
+        "sourceUnit": 672,
+        "src": "70:28:0",
         "symbolAliases": [],
         "unitAlias": ""
       },
@@ -842,40 +842,40 @@
             "arguments": null,
             "baseName": {
               "contractScope": null,
-              "id": 560,
+              "id": 4,
               "name": "StorageState",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 1376,
-              "src": "125:12:5",
+              "referencedDeclaration": 671,
+              "src": "125:12:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageState_$1376",
+                "typeIdentifier": "t_contract$_StorageState_$671",
                 "typeString": "contract StorageState"
               }
             },
-            "id": 561,
+            "id": 5,
             "nodeType": "InheritanceSpecifier",
-            "src": "125:12:5"
+            "src": "125:12:0"
           }
         ],
         "contractDependencies": [
-          1376
+          671
         ],
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 612,
+        "id": 56,
         "linearizedBaseContracts": [
-          612,
-          1376
+          56,
+          671
         ],
         "name": "Controllable",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 573,
+              "id": 17,
               "nodeType": "Block",
-              "src": "170:174:5",
+              "src": "170:174:0",
               "statements": [
                 {
                   "expression": {
@@ -887,7 +887,7 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 568,
+                        "id": 12,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -896,18 +896,18 @@
                           "argumentTypes": null,
                           "expression": {
                             "argumentTypes": null,
-                            "id": 564,
+                            "id": 8,
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1655,
-                            "src": "201:3:5",
+                            "referencedDeclaration": 950,
+                            "src": "201:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
                               "typeString": "msg"
                             }
                           },
-                          "id": 565,
+                          "id": 9,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -915,7 +915,7 @@
                           "memberName": "sender",
                           "nodeType": "MemberAccess",
                           "referencedDeclaration": null,
-                          "src": "201:10:5",
+                          "src": "201:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -928,18 +928,18 @@
                           "arguments": [],
                           "expression": {
                             "argumentTypes": [],
-                            "id": 566,
+                            "id": 10,
                             "name": "getProxyControllerAddress",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 587,
-                            "src": "215:25:5",
+                            "referencedDeclaration": 31,
+                            "src": "215:25:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_function_internal_view$__$returns$_t_address_$",
                               "typeString": "function () view returns (address)"
                             }
                           },
-                          "id": 567,
+                          "id": 11,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
@@ -947,13 +947,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "215:27:5",
+                          "src": "215:27:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "201:41:5",
+                        "src": "201:41:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -962,14 +962,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "4f6e6c79207468697320636f6e747261637427732027636f6e74726f6c6c6572272063616e20706572666f726d207468697320616374696f6e2e",
-                        "id": 569,
+                        "id": 13,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "256:60:5",
+                        "src": "256:60:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_b11ddb228d007a926e57aa5b31d072a54e0ba82a40c7149d9bf82bae0e65d86f",
@@ -989,21 +989,21 @@
                           "typeString": "literal_string \"Only this contract's 'controller' can perform this action.\""
                         }
                       ],
-                      "id": 563,
+                      "id": 7,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1658,
-                        1659
+                        953,
+                        954
                       ],
-                      "referencedDeclaration": 1659,
-                      "src": "180:7:5",
+                      "referencedDeclaration": 954,
+                      "src": "180:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 570,
+                    "id": 14,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1011,41 +1011,41 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "180:146:5",
+                    "src": "180:146:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 571,
+                  "id": 15,
                   "nodeType": "ExpressionStatement",
-                  "src": "180:146:5"
+                  "src": "180:146:0"
                 },
                 {
-                  "id": 572,
+                  "id": 16,
                   "nodeType": "PlaceholderStatement",
-                  "src": "336:1:5"
+                  "src": "336:1:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 574,
+            "id": 18,
             "name": "onlyController",
             "nodeType": "ModifierDefinition",
             "parameters": {
-              "id": 562,
+              "id": 6,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "167:2:5"
+              "src": "167:2:0"
             },
-            "src": "144:200:5",
+            "src": "144:200:0",
             "visibility": "internal"
           },
           {
             "body": {
-              "id": 586,
+              "id": 30,
               "nodeType": "Block",
-              "src": "417:90:5",
+              "src": "417:90:0",
               "statements": [
                 {
                   "expression": {
@@ -1058,32 +1058,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 581,
+                            "id": 25,
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1392,
-                            "src": "454:21:5",
+                            "referencedDeclaration": 687,
+                            "src": "454:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$1392_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
-                          "id": 582,
+                          "id": 26,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1391,
-                          "src": "454:43:5",
+                          "referencedDeclaration": 686,
+                          "src": "454:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
                             "typeString": "function () pure returns (bytes32)"
                           }
                         },
-                        "id": 583,
+                        "id": 27,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1091,7 +1091,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "454:45:5",
+                        "src": "454:45:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1107,32 +1107,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 579,
+                        "id": 23,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1375,
-                        "src": "434:8:5",
+                        "referencedDeclaration": 670,
+                        "src": "434:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EternalStorage_$887",
+                          "typeIdentifier": "t_contract$_EternalStorage_$331",
                           "typeString": "contract EternalStorage"
                         }
                       },
-                      "id": 580,
+                      "id": 24,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "getAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 653,
-                      "src": "434:19:5",
+                      "referencedDeclaration": 97,
+                      "src": "434:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_view$_t_bytes32_$returns$_t_address_$",
                         "typeString": "function (bytes32) view external returns (address)"
                       }
                     },
-                    "id": 584,
+                    "id": 28,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1140,21 +1140,21 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "434:66:5",
+                    "src": "434:66:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
                     }
                   },
-                  "functionReturnParameters": 578,
-                  "id": 585,
+                  "functionReturnParameters": 22,
+                  "id": 29,
                   "nodeType": "Return",
-                  "src": "427:73:5"
+                  "src": "427:73:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 587,
+            "id": 31,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -1162,23 +1162,23 @@
             "name": "getProxyControllerAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 575,
+              "id": 19,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "384:2:5"
+              "src": "384:2:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 578,
+              "id": 22,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 577,
+                  "id": 21,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 587,
-                  "src": "408:7:5",
+                  "scope": 31,
+                  "src": "408:7:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1186,10 +1186,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 576,
+                    "id": 20,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "408:7:5",
+                    "src": "408:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -1199,19 +1199,19 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "407:9:5"
+              "src": "407:9:0"
             },
-            "scope": 612,
-            "src": "350:157:5",
+            "scope": 56,
+            "src": "350:157:0",
             "stateMutability": "view",
             "superFunction": null,
             "visibility": "public"
           },
           {
             "body": {
-              "id": 610,
+              "id": 54,
               "nodeType": "Block",
-              "src": "672:268:5",
+              "src": "672:268:0",
               "statements": [
                 {
                   "expression": {
@@ -1223,19 +1223,19 @@
                           "typeIdentifier": "t_address",
                           "typeString": "address"
                         },
-                        "id": 597,
+                        "id": 41,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
                         "lValueRequested": false,
                         "leftExpression": {
                           "argumentTypes": null,
-                          "id": 593,
+                          "id": 37,
                           "name": "_proxyController",
                           "nodeType": "Identifier",
                           "overloadedDeclarations": [],
-                          "referencedDeclaration": 589,
-                          "src": "703:16:5",
+                          "referencedDeclaration": 33,
+                          "src": "703:16:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
@@ -1249,14 +1249,14 @@
                             {
                               "argumentTypes": null,
                               "hexValue": "30",
-                              "id": 595,
+                              "id": 39,
                               "isConstant": false,
                               "isLValue": false,
                               "isPure": true,
                               "kind": "number",
                               "lValueRequested": false,
                               "nodeType": "Literal",
-                              "src": "731:1:5",
+                              "src": "731:1:0",
                               "subdenomination": null,
                               "typeDescriptions": {
                                 "typeIdentifier": "t_rational_0_by_1",
@@ -1272,20 +1272,20 @@
                                 "typeString": "int_const 0"
                               }
                             ],
-                            "id": 594,
+                            "id": 38,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
                             "lValueRequested": false,
                             "nodeType": "ElementaryTypeNameExpression",
-                            "src": "723:7:5",
+                            "src": "723:7:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_type$_t_address_$",
                               "typeString": "type(address)"
                             },
                             "typeName": "address"
                           },
-                          "id": 596,
+                          "id": 40,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -1293,13 +1293,13 @@
                           "lValueRequested": false,
                           "names": [],
                           "nodeType": "FunctionCall",
-                          "src": "723:10:5",
+                          "src": "723:10:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_address",
                             "typeString": "address"
                           }
                         },
-                        "src": "703:30:5",
+                        "src": "703:30:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bool",
                           "typeString": "bool"
@@ -1308,14 +1308,14 @@
                       {
                         "argumentTypes": null,
                         "hexValue": "43616e6e6f7420736574207468652050726f787920436f6e74726f6c6c657220746f2061646472657373283029",
-                        "id": 598,
+                        "id": 42,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
                         "kind": "string",
                         "lValueRequested": false,
                         "nodeType": "Literal",
-                        "src": "747:47:5",
+                        "src": "747:47:0",
                         "subdenomination": null,
                         "typeDescriptions": {
                           "typeIdentifier": "t_stringliteral_e1ffcaf37da5ebf44f5649b8596b48f6849ff35bee5f6d9c613e938799ee7f0c",
@@ -1335,21 +1335,21 @@
                           "typeString": "literal_string \"Cannot set the Proxy Controller to address(0)\""
                         }
                       ],
-                      "id": 592,
+                      "id": 36,
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1658,
-                        1659
+                        953,
+                        954
                       ],
-                      "referencedDeclaration": 1659,
-                      "src": "682:7:5",
+                      "referencedDeclaration": 954,
+                      "src": "682:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
                         "typeString": "function (bool,string memory) pure"
                       }
                     },
-                    "id": 599,
+                    "id": 43,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1357,15 +1357,15 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "682:122:5",
+                    "src": "682:122:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 600,
+                  "id": 44,
                   "nodeType": "ExpressionStatement",
-                  "src": "682:122:5"
+                  "src": "682:122:0"
                 },
                 {
                   "expression": {
@@ -1378,32 +1378,32 @@
                           "argumentTypes": [],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 604,
+                            "id": 48,
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 1392,
-                            "src": "847:21:5",
+                            "referencedDeclaration": 687,
+                            "src": "847:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$1392_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
-                          "id": 605,
+                          "id": 49,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": false,
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 1391,
-                          "src": "847:43:5",
+                          "referencedDeclaration": 686,
+                          "src": "847:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
                             "typeString": "function () pure returns (bytes32)"
                           }
                         },
-                        "id": 606,
+                        "id": 50,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": false,
@@ -1411,7 +1411,7 @@
                         "lValueRequested": false,
                         "names": [],
                         "nodeType": "FunctionCall",
-                        "src": "847:45:5",
+                        "src": "847:45:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_bytes32",
                           "typeString": "bytes32"
@@ -1419,12 +1419,12 @@
                       },
                       {
                         "argumentTypes": null,
-                        "id": 607,
+                        "id": 51,
                         "name": "_proxyController",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 589,
-                        "src": "907:16:5",
+                        "referencedDeclaration": 33,
+                        "src": "907:16:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_address",
                           "typeString": "address"
@@ -1444,32 +1444,32 @@
                       ],
                       "expression": {
                         "argumentTypes": null,
-                        "id": 601,
+                        "id": 45,
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 1375,
-                        "src": "814:8:5",
+                        "referencedDeclaration": 670,
+                        "src": "814:8:0",
                         "typeDescriptions": {
-                          "typeIdentifier": "t_contract$_EternalStorage_$887",
+                          "typeIdentifier": "t_contract$_EternalStorage_$331",
                           "typeString": "contract EternalStorage"
                         }
                       },
-                      "id": 603,
+                      "id": 47,
                       "isConstant": false,
                       "isLValue": false,
                       "isPure": false,
                       "lValueRequested": false,
                       "memberName": "setAddress",
                       "nodeType": "MemberAccess",
-                      "referencedDeclaration": 779,
-                      "src": "814:19:5",
+                      "referencedDeclaration": 223,
+                      "src": "814:19:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_external_nonpayable$_t_bytes32_$_t_address_$returns$__$",
                         "typeString": "function (bytes32,address) external"
                       }
                     },
-                    "id": 608,
+                    "id": 52,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": false,
@@ -1477,20 +1477,20 @@
                     "lValueRequested": false,
                     "names": [],
                     "nodeType": "FunctionCall",
-                    "src": "814:119:5",
+                    "src": "814:119:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_tuple$__$",
                       "typeString": "tuple()"
                     }
                   },
-                  "id": 609,
+                  "id": 53,
                   "nodeType": "ExpressionStatement",
-                  "src": "814:119:5"
+                  "src": "814:119:0"
                 }
               ]
             },
             "documentation": null,
-            "id": 611,
+            "id": 55,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": false,
@@ -1498,16 +1498,16 @@
             "name": "setProxyControllerAddress",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 590,
+              "id": 34,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 589,
+                  "id": 33,
                   "name": "_proxyController",
                   "nodeType": "VariableDeclaration",
-                  "scope": 611,
-                  "src": "548:24:5",
+                  "scope": 55,
+                  "src": "548:24:0",
                   "stateVariable": false,
                   "storageLocation": "default",
                   "typeDescriptions": {
@@ -1515,10 +1515,10 @@
                     "typeString": "address"
                   },
                   "typeName": {
-                    "id": 588,
+                    "id": 32,
                     "name": "address",
                     "nodeType": "ElementaryTypeName",
-                    "src": "548:7:5",
+                    "src": "548:7:0",
                     "typeDescriptions": {
                       "typeIdentifier": "t_address",
                       "typeString": "address"
@@ -1528,27 +1528,27 @@
                   "visibility": "internal"
                 }
               ],
-              "src": "547:26:5"
+              "src": "547:26:0"
             },
             "payable": false,
             "returnParameters": {
-              "id": 591,
+              "id": 35,
               "nodeType": "ParameterList",
               "parameters": [],
-              "src": "672:0:5"
+              "src": "672:0:0"
             },
-            "scope": 612,
-            "src": "513:427:5",
+            "scope": 56,
+            "src": "513:427:0",
             "stateMutability": "nonpayable",
             "superFunction": null,
             "visibility": "external"
           }
         ],
-        "scope": 613,
-        "src": "100:842:5"
+        "scope": 57,
+        "src": "100:842:0"
       }
     ],
-    "src": "0:942:5"
+    "src": "0:942:0"
   },
   "compiler": {
     "name": "solc",
@@ -1556,5 +1556,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T13:54:40.422Z"
+  "updatedAt": "2018-08-13T23:07:42.312Z"
 }

@@ -2536,12 +2536,12 @@
         }
       },
       "links": {
-        "ProxyControllerKeyLib": "0x6b76731b504303a65488dbc138d7019c249b4216"
+        "ProxyControllerKeyLib": "0x69bfaf75c75a85bbbec12d3e108f1b3a2856aa5a"
       },
-      "address": "0xaba7902442c5739c6f0c182691d48d63d06a212e",
-      "transactionHash": "0x86d02eacce765509ec36d9763b225f4a704d8d49948a8df465063c81fc45752d"
+      "address": "0x5b3c2c61643515ec7354cc8d6e8fbff040e5fdb1",
+      "transactionHash": "0xddce08016808296134f2813089b7a93a0cf2d336a654150d43fadb0715ed6a4d"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T14:04:21.721Z"
+  "updatedAt": "2018-08-13T23:07:51.470Z"
 }
