@@ -24,9 +24,14 @@ module.exports = async (callback) => {
 
   try {
     let propertyStorageProxy = await PropertyStorageProxy.deployed()
-    propertyStorageProxy = await _.extend(propertyStorageProxy, PropertyManagementV1.at(propertyStorageProxy.address))
+    propertyStorageProxy = 
+      await _.extend(
+        propertyStorageProxy, 
+        PropertyManagementV1.at(propertyStorageProxy.address)
+      )
 
-    const controllerAddress = await propertyStorageProxy.getProxyControllerAddress.call()
+    const controllerAddress = 
+      await propertyStorageProxy.getProxyControllerAddress.call()
     const propertyConnectorV1 = await PropertyConnectorV1.deployed()
     console.log(`Set contoller Address:     ${propertyConnectorV1.address}`)
     console.log(`Current contoller Address: ${controllerAddress}`)
@@ -35,7 +40,8 @@ module.exports = async (callback) => {
     let success
     for(let property of propertyList) {
       success = await propertyConnectorV1.createDefaultProperty(property)
-      console.log(`${success ? 'Successfully' : 'Unsuccessfully'} created property: ${property}`)
+      console.log(`${success ? 'Successfully' : 'Unsuccessfully'} 
+        created property: ${property}`)
     }
   } catch(e) {
     console.log(e);

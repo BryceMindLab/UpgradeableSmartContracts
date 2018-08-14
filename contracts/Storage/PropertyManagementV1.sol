@@ -89,11 +89,11 @@ contract PropertyManagementV1 is Controllable {
     // TEST: All these setters are new along with the new storage schema
     // *** Public SETTERS - Only the 'Controller' can update these  *** 
     function setPropertyWeiCost(string _propertyName, uint _weiCost) public onlyController {
-        _setPropertyWeiCost(_propertyName, _weiCost);
+        _storage.setUint(_propertyName.getCostKey(), _weiCost);
     }
 
     function setPropertyOwnerAddress(string _propertyName, address _address) public onlyController {
-        _setPropertyOwnerAddress(_propertyName, _address); // Set the owner as the sender
+        _storage.setAddress(_propertyName.getPropertyOwnerKey(), _address); // Set the owner as the sender
     }
 
     // *** Internal SETTERS  *** 

@@ -11,14 +11,14 @@
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
     "exportedSymbols": {
       "StorageState": [
-        671
+        679
       ]
     },
-    "id": 672,
+    "id": 680,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 667,
+        "id": 675,
         "literals": [
           "solidity",
           "^",
@@ -31,9 +31,9 @@
       {
         "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/EternalStorage.sol",
         "file": "./EternalStorage.sol",
-        "id": 668,
+        "id": 676,
         "nodeType": "ImportDirective",
-        "scope": 672,
+        "scope": 680,
         "sourceUnit": 332,
         "src": "25:30:3",
         "symbolAliases": [],
@@ -45,19 +45,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 671,
+        "id": 679,
         "linearizedBaseContracts": [
-          671
+          679
         ],
         "name": "StorageState",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 670,
+            "id": 678,
             "name": "_storage",
             "nodeType": "VariableDeclaration",
-            "scope": 671,
+            "scope": 679,
             "src": "85:23:3",
             "stateVariable": true,
             "storageLocation": "default",
@@ -67,7 +67,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 669,
+              "id": 677,
               "name": "EternalStorage",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 331,
@@ -81,7 +81,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 672,
+        "scope": 680,
         "src": "57:54:3"
       }
     ],
@@ -91,14 +91,14 @@
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/StorageState.sol",
     "exportedSymbols": {
       "StorageState": [
-        671
+        679
       ]
     },
-    "id": 672,
+    "id": 680,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 667,
+        "id": 675,
         "literals": [
           "solidity",
           "^",
@@ -111,9 +111,9 @@
       {
         "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/Storage/EternalStorage.sol",
         "file": "./EternalStorage.sol",
-        "id": 668,
+        "id": 676,
         "nodeType": "ImportDirective",
-        "scope": 672,
+        "scope": 680,
         "sourceUnit": 332,
         "src": "25:30:3",
         "symbolAliases": [],
@@ -125,19 +125,19 @@
         "contractKind": "contract",
         "documentation": null,
         "fullyImplemented": true,
-        "id": 671,
+        "id": 679,
         "linearizedBaseContracts": [
-          671
+          679
         ],
         "name": "StorageState",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "constant": false,
-            "id": 670,
+            "id": 678,
             "name": "_storage",
             "nodeType": "VariableDeclaration",
-            "scope": 671,
+            "scope": 679,
             "src": "85:23:3",
             "stateVariable": true,
             "storageLocation": "default",
@@ -147,7 +147,7 @@
             },
             "typeName": {
               "contractScope": null,
-              "id": 669,
+              "id": 677,
               "name": "EternalStorage",
               "nodeType": "UserDefinedTypeName",
               "referencedDeclaration": 331,
@@ -161,7 +161,7 @@
             "visibility": "internal"
           }
         ],
-        "scope": 672,
+        "scope": 680,
         "src": "57:54:3"
       }
     ],
@@ -173,5 +173,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T23:07:42.313Z"
+  "updatedAt": "2018-08-14T23:07:08.278Z"
 }

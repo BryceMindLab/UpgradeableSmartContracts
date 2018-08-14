@@ -28,26 +28,36 @@ const PropertyControllerProxy = artifacts.require("PropertyControllerProxy")
 //  to run better with promises. 
 contract('Proxy contract test', async (accounts) => {
 
-  it("should allow us to set and retireve the proxyControllerAdress", async () => {
-    // Connect the proxy to leech off the PropertyConnectorV1
-    // TODO: Change all `deployed()` to `new()`
-    let propertyStorageProxy = await PropertyStorageProxy.deployed()
-    propertyStorageProxy = _.extend(propertyStorageProxy, PropertyManagementV1.at(propertyStorageProxy.address))
-    
-    const controllerAddress = await propertyStorageProxy.getProxyControllerAddress.call()
-    console.log(`Contoller Address: ${controllerAddress}`)
-    const propertyConnectorV1 = await PropertyConnectorV1.deployed()
-    assert.equal(propertyConnectorV1.address, controllerAddress, "These addresses do not match")
-    // NOTE: Left off here
-    // await propertyStorageProxy.setProxyControllerAddress(0xbd2c938b9f6bfc1a66368d08cb44dc3eb2ae27bc)
+  it("should allow us to set and retireve the proxyControllerAdress", 
+    async () => {
+      // Connect the proxy to leech off the PropertyConnectorV1
+      // TODO: Change all `deployed()` to `new()`
+      let propertyStorageProxy = await PropertyStorageProxy.deployed()
+      propertyStorageProxy = 
+        _.extend(
+          propertyStorageProxy, 
+          PropertyManagementV1.at(propertyStorageProxy.address)
+        )
+      
+      const controllerAddress = 
+        await propertyStorageProxy.getProxyControllerAddress.call()
+      console.log(`Contoller Address: ${controllerAddress}`)
+      const propertyConnectorV1 = await PropertyConnectorV1.deployed()
+      assert.equal(
+        propertyConnectorV1.address, 
+        controllerAddress, 
+        "These addresses do not match"
+      )
+      // NOTE: Left off here
+      // await propertyStorageProxy.setProxyControllerAddress(0xbd2c938b9f6bfc1a66368d08cb44dc3eb2ae27bc)
 
-    await propertyConnectorV1.createDefaultProperty("100_Bryce");
-    let name = await propertyStorageProxy.getPropertyNameAtID(1);
-    console.log(`StorageProxy: ${name}`)
-    
-    // await propertyConnectorV1.setWeiCost(0, 100)
-    // let cost = await propertyConnectorV1.getWeiCost(0);
-    // console.log(`Returned Cost: ${cost}`);
-    // assert.equal("Bryce", name, "These addresses do not match")
+      await propertyConnectorV1.createDefaultProperty("100_Bryce");
+      let name = await propertyStorageProxy.getPropertyNameAtID(1);
+      console.log(`StorageProxy: ${name}`)
+      
+      // await propertyConnectorV1.setWeiCost(0, 100)
+      // let cost = await propertyConnectorV1.getWeiCost(0);
+      // console.log(`Returned Cost: ${cost}`);
+      // assert.equal("Bryce", name, "These addresses do not match")
   })
 })

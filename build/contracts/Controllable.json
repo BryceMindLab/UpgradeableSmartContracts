@@ -63,7 +63,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 57,
-        "sourceUnit": 688,
+        "sourceUnit": 696,
         "src": "26:43:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -74,7 +74,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 57,
-        "sourceUnit": 672,
+        "sourceUnit": 680,
         "src": "70:28:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -88,10 +88,10 @@
               "id": 4,
               "name": "StorageState",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 671,
+              "referencedDeclaration": 679,
               "src": "125:12:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageState_$671",
+                "typeIdentifier": "t_contract$_StorageState_$679",
                 "typeString": "contract StorageState"
               }
             },
@@ -101,7 +101,7 @@
           }
         ],
         "contractDependencies": [
-          671
+          679
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -109,7 +109,7 @@
         "id": 56,
         "linearizedBaseContracts": [
           56,
-          671
+          679
         ],
         "name": "Controllable",
         "nodeType": "ContractDefinition",
@@ -143,7 +143,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 950,
+                            "referencedDeclaration": 958,
                             "src": "201:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -236,10 +236,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        953,
-                        954
+                        961,
+                        962
                       ],
-                      "referencedDeclaration": 954,
+                      "referencedDeclaration": 962,
                       "src": "180:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -305,10 +305,10 @@
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 687,
+                            "referencedDeclaration": 695,
                             "src": "454:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$695_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
@@ -319,7 +319,7 @@
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 686,
+                          "referencedDeclaration": 694,
                           "src": "454:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
@@ -354,7 +354,7 @@
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 670,
+                        "referencedDeclaration": 678,
                         "src": "434:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_EternalStorage_$331",
@@ -582,10 +582,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        953,
-                        954
+                        961,
+                        962
                       ],
-                      "referencedDeclaration": 954,
+                      "referencedDeclaration": 962,
                       "src": "682:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -625,10 +625,10 @@
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 687,
+                            "referencedDeclaration": 695,
                             "src": "847:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$695_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
@@ -639,7 +639,7 @@
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 686,
+                          "referencedDeclaration": 694,
                           "src": "847:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
@@ -691,7 +691,7 @@
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 670,
+                        "referencedDeclaration": 678,
                         "src": "814:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_EternalStorage_$331",
@@ -820,7 +820,7 @@
         "id": 2,
         "nodeType": "ImportDirective",
         "scope": 57,
-        "sourceUnit": 688,
+        "sourceUnit": 696,
         "src": "26:43:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -831,7 +831,7 @@
         "id": 3,
         "nodeType": "ImportDirective",
         "scope": 57,
-        "sourceUnit": 672,
+        "sourceUnit": 680,
         "src": "70:28:0",
         "symbolAliases": [],
         "unitAlias": ""
@@ -845,10 +845,10 @@
               "id": 4,
               "name": "StorageState",
               "nodeType": "UserDefinedTypeName",
-              "referencedDeclaration": 671,
+              "referencedDeclaration": 679,
               "src": "125:12:0",
               "typeDescriptions": {
-                "typeIdentifier": "t_contract$_StorageState_$671",
+                "typeIdentifier": "t_contract$_StorageState_$679",
                 "typeString": "contract StorageState"
               }
             },
@@ -858,7 +858,7 @@
           }
         ],
         "contractDependencies": [
-          671
+          679
         ],
         "contractKind": "contract",
         "documentation": null,
@@ -866,7 +866,7 @@
         "id": 56,
         "linearizedBaseContracts": [
           56,
-          671
+          679
         ],
         "name": "Controllable",
         "nodeType": "ContractDefinition",
@@ -900,7 +900,7 @@
                             "name": "msg",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 950,
+                            "referencedDeclaration": 958,
                             "src": "201:3:0",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_message",
@@ -993,10 +993,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        953,
-                        954
+                        961,
+                        962
                       ],
-                      "referencedDeclaration": 954,
+                      "referencedDeclaration": 962,
                       "src": "180:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1062,10 +1062,10 @@
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 687,
+                            "referencedDeclaration": 695,
                             "src": "454:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$695_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
@@ -1076,7 +1076,7 @@
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 686,
+                          "referencedDeclaration": 694,
                           "src": "454:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
@@ -1111,7 +1111,7 @@
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 670,
+                        "referencedDeclaration": 678,
                         "src": "434:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_EternalStorage_$331",
@@ -1339,10 +1339,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        953,
-                        954
+                        961,
+                        962
                       ],
-                      "referencedDeclaration": 954,
+                      "referencedDeclaration": 962,
                       "src": "682:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1382,10 +1382,10 @@
                             "name": "ProxyControllerKeyLib",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 687,
+                            "referencedDeclaration": 695,
                             "src": "847:21:0",
                             "typeDescriptions": {
-                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$687_$",
+                              "typeIdentifier": "t_type$_t_contract$_ProxyControllerKeyLib_$695_$",
                               "typeString": "type(library ProxyControllerKeyLib)"
                             }
                           },
@@ -1396,7 +1396,7 @@
                           "lValueRequested": false,
                           "memberName": "getProxyControllerKey",
                           "nodeType": "MemberAccess",
-                          "referencedDeclaration": 686,
+                          "referencedDeclaration": 694,
                           "src": "847:43:0",
                           "typeDescriptions": {
                             "typeIdentifier": "t_function_delegatecall_pure$__$returns$_t_bytes32_$",
@@ -1448,7 +1448,7 @@
                         "name": "_storage",
                         "nodeType": "Identifier",
                         "overloadedDeclarations": [],
-                        "referencedDeclaration": 670,
+                        "referencedDeclaration": 678,
                         "src": "814:8:0",
                         "typeDescriptions": {
                           "typeIdentifier": "t_contract$_EternalStorage_$331",
@@ -1556,5 +1556,5 @@
   },
   "networks": {},
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T23:07:42.312Z"
+  "updatedAt": "2018-08-14T23:07:08.272Z"
 }

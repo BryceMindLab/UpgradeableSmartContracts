@@ -31,7 +31,6 @@ the Crest Storage
 
     function setWeiCost(uint _tokenId, uint _cost) 
         public 
-        onlyCEO 
     {
         _storageInterface.setPropertyWeiCost(getName(_tokenId), _cost);
     }

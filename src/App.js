@@ -12,6 +12,8 @@ import './css/open-sans.css'
 import './css/pure-min.css'
 import './App.css'
 
+const weiToETH = 10**18
+
 class App extends Component {
   constructor(props) {
     super(props)
@@ -20,12 +22,14 @@ class App extends Component {
       proxyInstance: null,
       propertyConnectorInstance: null,
       properties: [],
+      inputs: [],
       controllerAddress: null,
       web3: null,
       intervalId: null
     }
 
     this.syncState = this.syncState.bind(this)
+    this.updateCost = this.updateCost.bind(this)
   }
 
   componentWillMount() {
@@ -35,10 +39,8 @@ class App extends Component {
     getWeb3
     .then(results => {
       let web3 = results.web3
-      web3.eth.deafaultAccount = web3.eth.accounts[0]
-      this.setState({
-        web3: results.web3
-      })
+      web3.eth.defaultAccount = web3.eth.accounts[0]
+      this.setState({ web3 })
   
 
       // Instantiate contract once web3 provided.
@@ -56,7 +58,7 @@ class App extends Component {
 
   componentDidMount() {
     this.syncState();
-    var intervalId = setInterval(this.syncState, 1000*10);
+    var intervalId = setInterval(this.syncState, 1000*2);
     // store intervalId in the state so it can be accessed later:
     this.setState({intervalId: intervalId});
   }
@@ -85,83 +87,102 @@ class App extends Component {
     propertyManagementV1.setProvider(this.state.web3.currentProvider)
     propertyConnectorV1.setProvider(this.state.web3.currentProvider)
 
-    // Deployed instance vars so we can chain functions later.
-    let proxyInstance
-
     // Get accounts.
     this.state.web3.eth.getAccounts((error, accounts) => {
       propertyStorageProxy.deployed()
-      .then((instance) => {
-        console.log(`Proxy Instance: ${instance}`)
+      .then((proxyInstance) => {
+        console.log(`Proxy Instance: ${proxyInstance}`)
         // This is where the magic happens. 
         // Here we use 'underscores' extend method to leech the proxy onto 
         // the delegate 'propertyManagementV1' 
-        proxyInstance = _.extend(instance, propertyManagementV1.at(instance.address))
+        proxyInstance = _.extend(proxyInstance, propertyManagementV1.at(proxyInstance.address))
         this.setState({proxyInstance: proxyInstance})
         // Setup the connector contract instance in state 
         return propertyConnectorV1.deployed()
-      }).then((instance) => {
-        console.log(`Connector Instance: ${instance}`)
-        this.setState({propertyConnectorInstance: instance})
+      }).then((connectorInstance) => {
+        console.log(`Connector Instance: ${connectorInstance}`)
+        this.setState({propertyConnectorInstance: connectorInstance})
         return this.syncState()
       })
     })
   }
-
-  // async hydrateProperites() {
-  //   const { propertyConnectorInstance } = this.state
-  //   if(propertyConnectorInstance) {
-  //     for(let property of propertyList) {
-  //       console.log(`Hydrating Database with property: ${property}`)
-  //       await propertyConnectorInstance.createDefaultProperty(property)
-  //     }
-  //   } else {
-  //     console.log("HydrateProperties: Missing contract instances!")
-  //   }
-  // }
 
   async syncState() {
     const { proxyInstance, propertyConnectorInstance } = this.state
     if(proxyInstance && propertyConnectorInstance) {
       const totalProperties = await proxyInstance.getTotalPropertyCount.call();
       if(totalProperties > 0) {
-        this.setState({properties: []});
+        let { properties } = this.state
         // Properties are zero indexed so we can tell if they have been init'ed first
-        for(var p=1; p<=totalProperties; p++) {
-          const name = await proxyInstance.getPropertyNameAtID(p)
-          const cost = await proxyInstance.getPropertyWeiCost(name)
+        for(var p=0; p<totalProperties; p++) {
+          const id = p+1
+          const name = await proxyInstance.getPropertyNameAtID(id)
+          let cost = await proxyInstance.getPropertyWeiCost(name)
+          cost /= weiToETH
           const property = {
             name,
-            cost
+            cost,
+            id
           }
-          this.setState({
-            properties: [...this.state.properties, property]
-          })
+          properties[p] = property;
         }
+        this.setState({ properties })
       }
     } else {
       console.log("SyncState: Missing contract instances!")
     }
   }
 
+  // TODO: need to finish the logic here 
+  async updateCost(event, index) {
+    event.preventDefault()
+    const { propertyConnectorInstance, properties, inputs } = this.state
+    const weiCost = Number(inputs[index]) * weiToETH
+    await propertyConnectorInstance.setWeiCost(properties[index].id, weiCost)
+    inputs[index] = ''; 
+    this.setState({inputs})
+    await this.syncState()
+  }
+
+  handleChange(event, index) {
+    const value = event.target.value
+    let { inputs } = this.state
+    inputs[index] = value
+    this.setState({inputs})
+  }
+
   render() {
-    const { properties } = this.state
+    const { properties, inputs } = this.state
     const propertyView = properties.map((property, index) => (
-      <li key={index}>{`Property Name: ${property.name} Cost: ${property.cost}`}</li>
+      <li key={index}> 
+        <div>
+          <p>{`Name: ${property.name} Cost: ${property.cost} ETH`}</p>
+            <form onSubmit={e => this.updateCost(e, index)}>
+              <input 
+                type="text" 
+                name="newCost"
+                value={inputs[index]}
+                onChange={(e) => this.handleChange(e, index)}
+              />
+              <button>Submit New Cost</button>
+            </form>
+        </div>
+      </li>
     ))
 
     return (
       <div className="App">
         <nav className="navbar pure-menu pure-menu-horizontal">
-            <a href="#" className="pure-menu-heading pure-menu-link">Truffle Box</a>
+            <a href="#" className="pure-menu-heading pure-menu-link">Crypto Real Estate</a>
         </nav>
 
         <main className="container">
           <div className="pure-g">
             <div className="pure-u-1-1">
-              <h1>Good to Go!</h1>
-              <p>Your Truffle Box is installed and ready.</p>
-              <h2>Smart Contract Example</h2>
+              <h1>Property Listings</h1>
+              <p>Takea look at our properties and their costs.</p>
+              <p>Change the value of each property as you please!</p>
+              <h2>Property List:</h2>
               <ul>
                 {propertyView}
               </ul>

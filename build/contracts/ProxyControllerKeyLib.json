@@ -26,14 +26,14 @@
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
     "exportedSymbols": {
       "ProxyControllerKeyLib": [
-        687
+        695
       ]
     },
-    "id": 688,
+    "id": 696,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 673,
+        "id": 681,
         "literals": [
           "solidity",
           "^",
@@ -49,16 +49,16 @@
         "contractKind": "library",
         "documentation": "@title ProxyControllerKeyLib\n@dev Computes Keys to create and lookup values in Enternal Storage ",
         "fullyImplemented": true,
-        "id": 687,
+        "id": 695,
         "linearizedBaseContracts": [
-          687
+          695
         ],
         "name": "ProxyControllerKeyLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 685,
+              "id": 693,
               "nodeType": "Block",
               "src": "279:71:4",
               "statements": [
@@ -72,7 +72,7 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "50524f58595f434f4e54524f4c4c4552",
-                            "id": 681,
+                            "id": 689,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -97,18 +97,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 679,
+                            "id": 687,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 937,
+                            "referencedDeclaration": 945,
                             "src": "306:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
                               "typeString": "abi"
                             }
                           },
-                          "id": 680,
+                          "id": 688,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -122,7 +122,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 682,
+                        "id": 690,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -144,18 +144,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 678,
+                      "id": 686,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 944,
+                      "referencedDeclaration": 952,
                       "src": "296:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 683,
+                    "id": 691,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -169,15 +169,15 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 677,
-                  "id": 684,
+                  "functionReturnParameters": 685,
+                  "id": 692,
                   "nodeType": "Return",
                   "src": "289:54:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 686,
+            "id": 694,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -185,22 +185,22 @@
             "name": "getProxyControllerKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 674,
+              "id": 682,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "246:2:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 677,
+              "id": 685,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 676,
+                  "id": 684,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 686,
+                  "scope": 694,
                   "src": "270:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -209,7 +209,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 675,
+                    "id": 683,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "270:7:4",
@@ -224,14 +224,14 @@
               ],
               "src": "269:9:4"
             },
-            "scope": 687,
+            "scope": 695,
             "src": "216:134:4",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 688,
+        "scope": 696,
         "src": "137:215:4"
       }
     ],
@@ -241,14 +241,14 @@
     "absolutePath": "/Users/bryceDoganer/Solidity/Solidity_Examples/proxy-interface-react/contracts/libs/ProxyControllerKeyLib.sol",
     "exportedSymbols": {
       "ProxyControllerKeyLib": [
-        687
+        695
       ]
     },
-    "id": 688,
+    "id": 696,
     "nodeType": "SourceUnit",
     "nodes": [
       {
-        "id": 673,
+        "id": 681,
         "literals": [
           "solidity",
           "^",
@@ -264,16 +264,16 @@
         "contractKind": "library",
         "documentation": "@title ProxyControllerKeyLib\n@dev Computes Keys to create and lookup values in Enternal Storage ",
         "fullyImplemented": true,
-        "id": 687,
+        "id": 695,
         "linearizedBaseContracts": [
-          687
+          695
         ],
         "name": "ProxyControllerKeyLib",
         "nodeType": "ContractDefinition",
         "nodes": [
           {
             "body": {
-              "id": 685,
+              "id": 693,
               "nodeType": "Block",
               "src": "279:71:4",
               "statements": [
@@ -287,7 +287,7 @@
                           {
                             "argumentTypes": null,
                             "hexValue": "50524f58595f434f4e54524f4c4c4552",
-                            "id": 681,
+                            "id": 689,
                             "isConstant": false,
                             "isLValue": false,
                             "isPure": true,
@@ -312,18 +312,18 @@
                           ],
                           "expression": {
                             "argumentTypes": null,
-                            "id": 679,
+                            "id": 687,
                             "name": "abi",
                             "nodeType": "Identifier",
                             "overloadedDeclarations": [],
-                            "referencedDeclaration": 937,
+                            "referencedDeclaration": 945,
                             "src": "306:3:4",
                             "typeDescriptions": {
                               "typeIdentifier": "t_magic_abi",
                               "typeString": "abi"
                             }
                           },
-                          "id": 680,
+                          "id": 688,
                           "isConstant": false,
                           "isLValue": false,
                           "isPure": true,
@@ -337,7 +337,7 @@
                             "typeString": "function () pure returns (bytes memory)"
                           }
                         },
-                        "id": 682,
+                        "id": 690,
                         "isConstant": false,
                         "isLValue": false,
                         "isPure": true,
@@ -359,18 +359,18 @@
                           "typeString": "bytes memory"
                         }
                       ],
-                      "id": 678,
+                      "id": 686,
                       "name": "keccak256",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [],
-                      "referencedDeclaration": 944,
+                      "referencedDeclaration": 952,
                       "src": "296:9:4",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_sha3_pure$__$returns$_t_bytes32_$",
                         "typeString": "function () pure returns (bytes32)"
                       }
                     },
-                    "id": 683,
+                    "id": 691,
                     "isConstant": false,
                     "isLValue": false,
                     "isPure": true,
@@ -384,15 +384,15 @@
                       "typeString": "bytes32"
                     }
                   },
-                  "functionReturnParameters": 677,
-                  "id": 684,
+                  "functionReturnParameters": 685,
+                  "id": 692,
                   "nodeType": "Return",
                   "src": "289:54:4"
                 }
               ]
             },
             "documentation": null,
-            "id": 686,
+            "id": 694,
             "implemented": true,
             "isConstructor": false,
             "isDeclaredConst": true,
@@ -400,22 +400,22 @@
             "name": "getProxyControllerKey",
             "nodeType": "FunctionDefinition",
             "parameters": {
-              "id": 674,
+              "id": 682,
               "nodeType": "ParameterList",
               "parameters": [],
               "src": "246:2:4"
             },
             "payable": false,
             "returnParameters": {
-              "id": 677,
+              "id": 685,
               "nodeType": "ParameterList",
               "parameters": [
                 {
                   "constant": false,
-                  "id": 676,
+                  "id": 684,
                   "name": "",
                   "nodeType": "VariableDeclaration",
-                  "scope": 686,
+                  "scope": 694,
                   "src": "270:7:4",
                   "stateVariable": false,
                   "storageLocation": "default",
@@ -424,7 +424,7 @@
                     "typeString": "bytes32"
                   },
                   "typeName": {
-                    "id": 675,
+                    "id": 683,
                     "name": "bytes32",
                     "nodeType": "ElementaryTypeName",
                     "src": "270:7:4",
@@ -439,14 +439,14 @@
               ],
               "src": "269:9:4"
             },
-            "scope": 687,
+            "scope": 695,
             "src": "216:134:4",
             "stateMutability": "pure",
             "superFunction": null,
             "visibility": "public"
           }
         ],
-        "scope": 688,
+        "scope": 696,
         "src": "137:215:4"
       }
     ],
@@ -460,10 +460,10 @@
     "4447": {
       "events": {},
       "links": {},
-      "address": "0x36a8054476cef7d35251fae816f87e09a49e7e43",
-      "transactionHash": "0x9da429820a2f010355b6845dd7207eee7ed07b12cc772fd00734123efa126f9b"
+      "address": "0xaa588d3737b611bafd7bd713445b314bd453a5c8",
+      "transactionHash": "0xb75ffdd1cfef82d5fd7874e31471c20d0fe391a7e4cc870b5cd7581e47440666"
     }
   },
   "schemaVersion": "2.0.1",
-  "updatedAt": "2018-08-13T23:07:51.463Z"
+  "updatedAt": "2018-08-14T23:10:33.914Z"
 }
