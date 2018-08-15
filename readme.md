@@ -1,5 +1,4 @@
-# Upgradeable Solidity Smart Contracts 
-## (with simple React front-end)
+# Upgradeable Solidity Smart Contracts <br/> (with simple React front-end)
 The purpose of this repository is to demonstrate how to develop upgradeable smart contracts.
 
 ## Dependencies 
