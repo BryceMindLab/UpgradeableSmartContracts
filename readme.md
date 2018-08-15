@@ -29,3 +29,6 @@ MetaMask is an Ethereum wallet Chrome extension, which makes it easy to process 
 1. Logout of MetaMask, then click **Import using account seed phrase**. 
 2. Find the seed phrase given from the development blockchain and use it to setup a new account. (This seed phrase is normally printed in the console when the development blockchain started.)  
 3. Now you have access to test funds from your newly created account on the development blockchain.
+
+
+![Contract Diagram](https://github.com/BryceDoganer/UpgradeableSmartContracts/blob/master/contract-diagram.png)
