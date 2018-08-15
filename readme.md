@@ -32,10 +32,11 @@ MetaMask is an Ethereum wallet Chrome extension, which makes it easy to process 
 
 # How the Contracts Interact
 Below you will find a visual of how all of the contracts interact together.
+
 **Key:**
-* Every rectange represents a different contract, with the contract name in bold at the top. -**PropertyStorageProxy** is also a separate contract, but it is used to 'leech' onto **PropertyManagementV1** and essentially become it.- 
+* Every rectange represents a different contract, with the contract name in bold at the top. _**PropertyStorageProxy** is also a separate contract, but it is used to 'leech' onto **PropertyManagementV1** and essentially become it._ 
 * The **solid** arrows point to parent contracts of the originator. 
-* The **dashed** arrows show where *pointers* flow to.   
+* The **dashed** arrows show where _pointers_ flow to.   
 
 //TODO: Finish explanation 
 
