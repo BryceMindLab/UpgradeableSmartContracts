@@ -30,5 +30,13 @@ MetaMask is an Ethereum wallet Chrome extension, which makes it easy to process 
 2. Find the seed phrase given from the development blockchain and use it to setup a new account. (This seed phrase is normally printed in the console when the development blockchain started.)  
 3. Now you have access to test funds from your newly created account on the development blockchain.
 
+# How the Contracts Interact
+Below you will find a visual of how all of the contracts interact together.
+**Key:**
+* Every rectange represents a different contract, with the contract name in bold at the top. -**PropertyStorageProxy** is also a separate contract, but it is used to 'leech' onto **PropertyManagementV1** and essentially become it.- 
+* The **solid** arrows point to parent contracts of the originator. 
+* The **dashed** arrows show where *pointers* flow to.   
+
+//TODO: Finish explanation 
 
 ![Contract Diagram](https://github.com/BryceDoganer/UpgradeableSmartContracts/blob/master/contract-diagram.png)
