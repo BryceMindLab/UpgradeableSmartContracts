@@ -6,43 +6,46 @@ import "../libs/StorageKeyLib.sol";
 contract PropertyManagementV1 is Controllable {  
     using StorageKeyLib for string; 
 
-    //// @dev Create a default property with a starting price
-    function createDefaultProperty(string _propertyName)
-        public
-    {
-        createProperty(
-            _propertyName, 
-            10**20 // 100 Ether
-        );
+
+    /// @notice Crestes a default property with a price of 100 Ether.
+    /// @param _propertyName -The name of the property.
+    /// @dev The value is stored on the blockcahin in wei. 1 Ether = 10**18 wei
+    function createDefaultProperty(string _propertyName) public returns (bool _success) {
+        _success = createProperty(_propertyName, 10**20); // 100 Ether
     }
 
-    // TEST: Updated this method for the new storage system
-    function createProperty(string _propertyName, uint _cost)
+    /// @notice Create a property with a given name and wei cost.
+    /// @param _propertyName -The name of the property.
+    /// @param _weiCost -The cost of the property in wei.
+    /// @return bool -Return if the creation was a success 
+    function createProperty(string _propertyName, uint _weiCost)
         public
-        onlyController // NOTE: apparently I'm supposed to 'fix the COO logic?'
+        onlyController
         returns (bool)
     {
-      // Check to see if there is a value initialized on the shield, if so 
-      //  then this Property has already been created.
+        // The way the DB is setup, we cannot have two properties 
+        //  with the same name
         if(propertyExists(_propertyName)) return false;
-
         // Initialize the property data to default values 
-        _setPropertyWeiCost(_propertyName, _cost); 
+        _setPropertyWeiCost(_propertyName, _weiCost); 
         _setPropertyOwnerAddress(_propertyName, msg.sender);
-        _incrementOwnerPropertyCount(msg.sender);
+        _incrementOwnerPropertyCount(msg.sender);  
         _addPropertyAndID(_propertyName);
-
-        // FIXME: Need to reimplement this method (Possibly in a nother countract))
-        // _increaseFactionPower(id);
         return true;
     }
 
-    // NOTE: We are '1' indexing properties to tell if they have been init'ed or not
+    /// @notice Updates total properties count and 
+    ///     links the property name and id together .
+    /// @param _propertyName -The name of the property.
+    /// @dev If you choose to implement ERC721 standard, then you need a way
+    ///     to look up properties by ID. The name and id linking in this 
+    ///     function allows us to do just that.  
     function _addPropertyAndID(string _propertyName) private {
+        // NOTE: We are '1' indexing to tell if they have been init'ed or not
         uint propertyId = getTotalPropertyCount() + 1;
-        // Update the total propertys count 
+        // Update the total properties count 
         _storage.setUint(
-            StorageKeyLib.getTotalPropertysKey(), 
+            StorageKeyLib.getTotalPropertiesKey(), 
             propertyId
         );
         // Linking propertyId to the propertyName in Eternal Storage
@@ -50,13 +53,21 @@ contract PropertyManagementV1 is Controllable {
             StorageKeyLib.getPropertyNameFromIDKey(propertyId), 
             _propertyName
         );
-        // Linking propertyName to the propertyId  in Eternal Storage
+        // Linking propertyName to the propertyId in Eternal Storage
         _storage.setUint(
             _propertyName.getPropertyIDFromNameKey(), 
             propertyId
         );  
     }
 
+    /*
+
+    *** Public GETTERS
+
+    */
+    /// @notice Find if a property exists by checking it's id number
+    /// @dev We '1-indexed' the property id's so that if and id of 0 was 
+    ///     returned from the database we know it has not been created yet
     function propertyExists(string _propertyName) public view returns (bool) {
         return (getPropertyId(_propertyName) > 0);
     }
@@ -69,7 +80,6 @@ contract PropertyManagementV1 is Controllable {
         return _storage.getUint(_propertyName.getPropertyIDFromNameKey());
     }
 
-    // TEST: Test all of the 'get' logic 
     function getPropertyWeiCost(string _propertyName) public view returns (uint) {
         return _storage.getUint(_propertyName.getCostKey());
     }
@@ -83,20 +93,36 @@ contract PropertyManagementV1 is Controllable {
     }
 
     function getTotalPropertyCount() public view returns (uint) {
-        return _storage.getUint(StorageKeyLib.getTotalPropertysKey());
+        return _storage.getUint(StorageKeyLib.getTotalPropertiesKey());
     }
 
-    // TEST: All these setters are new along with the new storage schema
-    // *** Public SETTERS - Only the 'Controller' can update these  *** 
-    function setPropertyWeiCost(string _propertyName, uint _weiCost) public onlyController {
+    /*
+    
+    *** Public SETTERS - Only the 'Controller' can update these  *** 
+
+    */
+    /// @dev In this section, only the contracts 'controller' 
+    ///     can access these functions
+    function setPropertyWeiCost(string _propertyName, uint _weiCost) 
+        public 
+        onlyController 
+    {
         _storage.setUint(_propertyName.getCostKey(), _weiCost);
     }
 
-    function setPropertyOwnerAddress(string _propertyName, address _address) public onlyController {
-        _storage.setAddress(_propertyName.getPropertyOwnerKey(), _address); // Set the owner as the sender
+    function setPropertyOwnerAddress(string _propertyName, address _address) 
+        public 
+        onlyController 
+    {
+        _storage.setAddress(_propertyName.getPropertyOwnerKey(), _address); 
     }
 
-    // *** Internal SETTERS  *** 
+    /*
+    
+     *** Internal SETTERS  *** 
+
+    */
+    
     function _setPropertyWeiCost(string _propertyName, uint _weiCost) internal {
         _storage.setUint(_propertyName.getCostKey(), _weiCost);
     }
@@ -122,10 +148,4 @@ contract PropertyManagementV1 is Controllable {
           propertyCount - 1
         );
     }
-
-    // Need to look through these functions to see which ones need reimplementation 
-    // // FIXME: probably deleting this function
-    // function getFactionPowerLevelAddress(uint _index) public view returns (address _addresse) {
-    //     return factionPowerLevelAddresses[_index];
-    // }
 }

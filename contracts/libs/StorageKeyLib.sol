@@ -50,7 +50,7 @@ library StorageKeyLib {
         return keccak256(abi.encodePacked(_id, PROPERTY_ID));
     }
 
-    function getTotalPropertysKey() public pure returns (bytes32) {
+    function getTotalPropertiesKey() public pure returns (bytes32) {
         return keccak256(abi.encodePacked("TOTAL_PROPERTIES"));
     }
 
@@ -59,8 +59,6 @@ library StorageKeyLib {
     Admin Keys
 
     */
-
-    // NOTE: Can't change the CEO_ADDRESS key because it's hardcoded in the proxy
     bytes32 constant internal CEO_ADDRESS = "CEO_ADDRESS";
     bytes32 constant internal CFO_ADDRESS = "CFO_ADDRESS";
     bytes32 constant internal COO_ADDRESS = "COO_ADDRESS";
@@ -87,32 +85,4 @@ library StorageKeyLib {
     function getCEOPausedKey() public pure returns (bytes32) {
         return keccak256(abi.encodePacked(PAUSED_CEO));
     } 
-
-
-    /*
-
-    ERC721 Implementation Keys
-
-    */
-
-    // FIXME: Not going planning on implementing the operator code
-    // bytes32 constant internal NUM_OPERATORS = "NUM_OPERATORS";
-    // bytes32 constant internal OPERATOR = "OPERATOR";
-    bytes32 constant internal APPROVAL = "APPROVAL";
-
-    // function getNumOperatorsForAddressKey(address _owner) public pure returns (bytes32) {
-    //     return keccak256(abi.encodePacked(_owner, NUM_OPERATORS));
-    // } 
-    
-    // /// @notice Return the lookup key for _operatorID of _owner addresss
-    // function getOperatorIDForAddressKey(address _owner, uint _operatorID) public pure returns (bytes32) {
-    //     return keccak256(abi.encodePacked(_owner, _operatorID, OPERATOR));
-    // }
-
-    /// @notice Return the lookup key for _operatorID of _owner addresss
-    function getApprovalForPropertyIDKey(uint _propertyId) public pure returns (bytes32) {
-        return keccak256(abi.encodePacked(_propertyId, APPROVAL));
-    } 
-
-
 }

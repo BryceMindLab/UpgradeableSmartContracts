@@ -35,13 +35,15 @@ module.exports = async (callback) => {
     const propertyConnectorV1 = await PropertyConnectorV1.deployed()
     console.log(`Set contoller Address:     ${propertyConnectorV1.address}`)
     console.log(`Current contoller Address: ${controllerAddress}`)
-    const weiCost = await propertyConnectorV1.getWeiCost.call(1);
-    console.log(`weiCost: ${weiCost}`);
-    let success
+    // const weiCost = await propertyConnectorV1.getWeiCost.call(1);
+    // console.log(`weiCost: ${weiCost}`);
     for(let property of propertyList) {
-      success = await propertyConnectorV1.createDefaultProperty(property)
-      console.log(`${success ? 'Successfully' : 'Unsuccessfully'} 
-        created property: ${property}`)
+      try {
+        await propertyConnectorV1.createDefaultProperty(property)
+        console.log(`Successfully created property: ${property}.`)
+      } catch(error) {
+        console.log(`Unsuccessfully created property: ${property}. It has already been created.`)
+      }
     }
   } catch(e) {
     console.log(e);

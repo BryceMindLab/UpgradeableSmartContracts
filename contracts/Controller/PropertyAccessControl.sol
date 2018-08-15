@@ -34,8 +34,6 @@ contract PropertyAccessControl {
     /// @dev The CrestAccessControl constructor sets the original sender of the contract as the CEO
     constructor() public {
         CEOAddress = msg.sender;
-        // TODO: Probably need to start the app paused.
-        // TODO: start with the COO address initialized as well?
     }
 
     /*
@@ -167,7 +165,6 @@ contract PropertyAccessControl {
         emit Paused(isPaused || isCEOPaused);
     }
 
-    // NOTE: Are we still planning on pausing the contract? 
     /// @dev When calculating faction payouts the contract will be paused to
     // 	ensure no data is updated during the payout session.
     function pause() public onlyCLevel whenNotPaused {
