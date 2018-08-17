@@ -31,13 +31,25 @@ MetaMask is an Ethereum wallet Chrome extension, which makes it easy to process 
 3. Now you have access to test funds from your newly created account on the development blockchain.
 
 # How the Contracts Interact
+The workings of this proxy would not be possible without the knowledge gained from the following article: 
+[How to write upgradable smart contracts in solidity!](https://medium.com/quillhash/how-to-write-upgradable-smart-contracts-in-solidity-d8f1b95a0e9a)
+
+This repo was designed to take the idea of upgradeable smart-contracts one step further and add interface support so that large contracts can be split to meet gas constraints. 
+
+
 Below you will find a visual of how all of the contracts interact together.
 
 **Key:**
 * Every rectange represents a different contract, with the contract name in bold at the top. _**PropertyStorageProxy** is also a separate contract, but it is used to 'leech' onto **PropertyManagementV1** and essentially become it._ 
 * The **solid** arrows point to parent contracts of the originator. 
-* The **dashed** arrows show where _pointers_ flow to.   
+* The **dashed** arrows show where _pointers_ are stored.   
 
-//TODO: Finish explanation 
+First be aware that not ALL of these contracts are upgradeable. 
+**`EternalStorage`**, **`PropertyStorageProxy`**, and **`StorageState`** cannot be upgraded. Because of this, a key-value storage scheme is used in EternalStorage so that any type of data scheme can be used. All of these contracts work together to make access to **`EternalStorage`** possible. _All data in `EternalStorage` is stored in a mapping that maps `msg.sender` to the data so that external addresses cannot alter the data._
+
+The rest of the contracts can be upgraded and hold the logic to make the DApp functional. 
+ 
 
 ![Contract Diagram](https://github.com/BryceDoganer/UpgradeableSmartContracts/blob/master/contract-diagram.png)
+
+ 
