@@ -44,11 +44,11 @@ Below you will find a visual of how all of the contracts interact together.
 * The **solid** arrows point to parent contracts of the originator. 
 * The **dashed** arrows show where _pointers_ are stored.   
 
-First be aware that not ALL of these contracts are upgradeable. 
-**`EternalStorage`**, **`PropertyStorageProxy`**, and **`StorageState`** cannot be upgraded. Because of this, a key-value storage scheme is used in EternalStorage so that any type of data scheme can be used. All of these contracts work together to make access to **`EternalStorage`** possible. _All data in `EternalStorage` is stored in a mapping that maps `msg.sender` to the data so that external addresses cannot alter the data._
+First be aware that only certain contracts are upgradeable. 
+**`EternalStorage`**, **`PropertyStorageProxy`**, and **`StorageState`** cannot be upgraded. Because of this, a key-value storage scheme is used in **`EternalStorage`** so that any type of data scheme can be used. All of these contracts work together to make access to **`EternalStorage`** possible. _All data in **`EternalStorage`** is stored in a mapping that maps `msg.sender` to the data so that external addresses cannot alter the data._
 
 The rest of the contracts can be upgraded and hold the logic to make the DApp functional. 
- 
+
 
 ![Contract Diagram](https://github.com/BryceDoganer/UpgradeableSmartContracts/blob/master/contract-diagram.png)
 
