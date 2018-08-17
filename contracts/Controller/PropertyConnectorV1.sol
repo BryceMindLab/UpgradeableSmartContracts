@@ -46,12 +46,12 @@ contract PropertyConnectorV1 is PropertyAccessControl {
     /// @param _tokenId -The ID of a given property 
     /// @param _weiCost -The new cost in wei 
     function setWeiCost(uint _tokenId, uint _weiCost)  public {
-        _storageInterface.setPropertyWeiCost(getName(_tokenId), _cost);
+        _storageInterface.setPropertyWeiCost(getName(_tokenId), _weiCost);
     }
     
     /// @notice Sets the weiCost of a property with the given id 
     /// @param _tokenId -The ID of a given property 
-    /// @param uint -The cost of the property in wei 
+    /// @return uint -The cost of the property in wei 
     function getWeiCost(uint _tokenId) public view returns (uint) {
         return _storageInterface.getPropertyWeiCost(getName(_tokenId));
     }
