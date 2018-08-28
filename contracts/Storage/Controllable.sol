@@ -26,8 +26,6 @@ contract Controllable is StorageState, Ownable {
     /// @notice This function allows the controller address to be changed. 
     ///  When this contract is created the 'owner' is set in the 'Ownable'
     ///  contract.
-    /// @dev I'm not 100% certain if this should use the `onlyOwner` or 
-    ///   `onlyController` function modifier 
     function setProxyControllerAddress(address _proxyController) 
         external 
         onlyOwner
