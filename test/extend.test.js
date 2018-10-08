@@ -16,13 +16,11 @@ USING WEB3
 A web3 instance is available in each test file, 
 configured to the correct provider. So calling web3.eth.getBalance just works!
 */
-const EternalStorage = artifacts.require("EternalStorage")
 const PropertyStorageProxy = artifacts.require("PropertyStorageProxy")
 const StorageKeyLib = artifacts.require("StorageKeyLib")
 const ProxyControllerKeyLib = artifacts.require("ProxyControllerKeyLib")
 const PropertyManagementV1 = artifacts.require("PropertyManagementV1")
 const PropertyConnectorV1 = artifacts.require("PropertyConnectorV1")
-const PropertyControllerProxy = artifacts.require("PropertyControllerProxy")
 
 // NOTE: Tests seem to run better with async functions, while migrations seem
 //  to run better with promises. 

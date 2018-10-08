@@ -6,7 +6,7 @@ import "./PropertyAccessControl.sol";
 /// @title Property Access Control 
 /// @author Bryce Doganer
 /// @notice This contract is setup as an interface between the front-end and 
-///   the storage contract arragement. 
+///   the storage contract arrangement. 
 /// @dev This contract sends calls to the `PropertyStorageProxy` contract through 
 ///   the `PropertyStorageInterface` contract by setting the address of the interface
 ///   to the address of the proxy. Inside, the proxy is linked to the `PropertyManagement`
