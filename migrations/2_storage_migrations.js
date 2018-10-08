@@ -16,12 +16,14 @@ module.exports = async (deployer, network, accounts) => {
     return PropertyConnectorV1.deployed();
   }).then((instance) => {
     propertyConnectorV1 = instance;
-    deployer.deploy(EternalStorage)
+    return deployer.deploy(EternalStorage)
   }).then(() => {
     return deployer.deploy(ProxyControllerKeyLib)
   }).then(() => {
     return deployer.link(ProxyControllerKeyLib, PropertyStorageProxy)
   }).then(() => {
+    // TODO:
+    // console.log(EternalStorage.address, propertyConnectorV1.address)
     return deployer.deploy(
       // The Storage Proxy Contract holds a pointer to the EternalStorage 
       //   contract and sets the Connector contract address as the proxyController

@@ -45,3 +45,6 @@ src/images
 
 # Extras
 src/interactWithContracts.md
+
+# Environment Variables
+.env
