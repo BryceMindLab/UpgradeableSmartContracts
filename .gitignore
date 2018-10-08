@@ -39,6 +39,7 @@ Thumbs.db
 # Node Modules #
 ################
 node_modules/
+build/
 
 # Don't want to include the images
 src/images
